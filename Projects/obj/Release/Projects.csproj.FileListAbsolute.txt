@@ -1,0 +1,3 @@
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Release\Projects.csprojResolveAssemblyReference.cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Release\Projects.Migrations.initial.resources
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Release\Projects.csproj.GenerateResource.Cache
