@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BlackOwl.Core.Interfaces;
+using System.Diagnostics;
+using System.Reflection;
 
 namespace BlackOwl.Core
 {
@@ -18,7 +20,7 @@ namespace BlackOwl.Core
         [ImportMany]
         private IEnumerable<Lazy<IRouteRegistrar, IRouteRegistrarMetadata>> RouteRegistrars;
         private static IEnumerable<Lazy<IActionVerb, IActionVerbMetadata>> ActionVerbs;
-
+        private static IEnumerable<Lazy<IModuleInfo>> ModuleInfos;
         public static void Compose(List<string> pluginFolders)
         {
             try
@@ -99,6 +101,35 @@ namespace BlackOwl.Core
             return ActionVerbs
                 .Where(l => l.Metadata.Category.Equals(category, StringComparison.InvariantCultureIgnoreCase))
                 .Select(l => l.Value);
+        }
+
+        public static IEnumerable<IModuleInfo> GetAllModulesInfo()
+        {
+            List<IModuleInfo> ap = new List<IModuleInfo>();
+
+            foreach (var inf in ModuleInfos)
+            {
+                ap.Add(inf.Value);
+            }
+
+            return ap;
+        }
+        public static string GetApplicationName()
+        {
+            try
+            {
+                string ap = null;
+                FileVersionInfo finof = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location);
+                ap = finof.ProductName;
+
+                return ap;
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+                return null;
+            }
         }
     }
 }

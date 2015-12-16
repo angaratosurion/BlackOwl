@@ -164,6 +164,7 @@
     <Compile Include="Application\App_Start\IdentityConfig.cs" />
     <Compile Include="Application\App_Start\RouteConfig.cs" />
     <Compile Include="Application\App_Start\Startup.Auth.cs" />
+    <Compile Include="Application\info.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="CommonTools.cs" />
     <Compile Include="Controllers\CustomControllerFactory.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="Interfaces\IActionVerb.cs" />
     <Compile Include="Interfaces\IActionVerbMetadata.cs" />
     <Compile Include="Interfaces\IControllerMetadata.cs" />
+    <Compile Include="Interfaces\IModuleInfo.cs" />
     <Compile Include="Interfaces\IRouteRegistrar.cs" />
     <Compile Include="Interfaces\IRouteRegistrarMetadata.cs" />
     <Compile Include="Managers\FileManager.cs" />

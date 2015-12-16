@@ -27,6 +27,14 @@ namespace Projects.Verbs
             }
         }
 
+        public string Description
+        {
+            get
+            {
+                return "Handles Modules";
+            }
+        }
+
         public string Name
         {
             get
