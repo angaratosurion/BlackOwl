@@ -205,8 +205,6 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -313,6 +311,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\BlackCogs\BlackCogs\BlackCogs.csproj">
+      <Project>{b17ede4e-7c83-40d7-be1b-5b54598f0d30}</Project>
+      <Name>BlackCogs</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlackOwl.Core\BlackOwl.Core.csproj">
       <Project>{0a876a7b-02f4-4152-8627-a222e78a73b1}</Project>
       <Name>BlackOwl.Core</Name>

@@ -9,7 +9,7 @@ using Microsoft.Owin.Security;
 using BlackOwl.Models;
 using System.ComponentModel.Composition;
 using BlackOwl.Models;
-
+using BlackCogs.Data.ViewModels.Identity;
 namespace BlackOwl.Controllers
 {
     [Export("Manage", typeof(IController))]
