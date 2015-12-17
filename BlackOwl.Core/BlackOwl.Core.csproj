@@ -182,12 +182,6 @@
     <Compile Include="Data\Models\Plugin.cs" />
     <Compile Include="Data\Models\Tag.cs" />
     <Compile Include="Data\Models\CommentThread.cs" />
-    <Compile Include="Interfaces\IActionVerb.cs" />
-    <Compile Include="Interfaces\IActionVerbMetadata.cs" />
-    <Compile Include="Interfaces\IControllerMetadata.cs" />
-    <Compile Include="Interfaces\IModuleInfo.cs" />
-    <Compile Include="Interfaces\IRouteRegistrar.cs" />
-    <Compile Include="Interfaces\IRouteRegistrarMetadata.cs" />
     <Compile Include="Managers\FileManager.cs" />
     <Compile Include="Managers\PluginManager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
@@ -222,6 +216,12 @@
     <Content Include="Scripts\jquery-1.9.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BlackCogs\BlackCogs\BlackCogs.csproj">
+      <Project>{b17ede4e-7c83-40d7-be1b-5b54598f0d30}</Project>
+      <Name>BlackCogs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

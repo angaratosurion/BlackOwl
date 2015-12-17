@@ -96,11 +96,6 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Project
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.dll.config
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.pdb
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csprojResolveAssemblyReference.cache
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.Migrations.initial.resources
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csproj.GenerateResource.Cache
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Create.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Delete.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Details.cshtml
@@ -139,3 +134,8 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Mod
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.dll.config
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csprojResolveAssemblyReference.cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.Migrations.initial.resources
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csproj.GenerateResource.Cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb

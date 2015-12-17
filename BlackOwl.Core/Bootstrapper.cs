@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BlackOwl.Core.Interfaces;
+using BlackCogs.Interfaces;
 using System.Diagnostics;
 using System.Reflection;
 

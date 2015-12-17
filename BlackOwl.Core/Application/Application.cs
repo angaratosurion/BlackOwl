@@ -9,7 +9,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using BlackOwl.Core.Controllers;
-using BlackOwl.Core.Interfaces;
+using BlackCogs.Interfaces;
 using BlackOwl.Core.Views;
 
 namespace BlackOwl.Core.Application
