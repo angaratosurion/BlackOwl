@@ -1,6 +1,7 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using BlackCogs.Data.Models;
 using BlackOwl.Core.Data;
 using BlackOwl.Core.Data.Models;
 using Microsoft.AspNet.Identity;

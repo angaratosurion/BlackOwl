@@ -13,6 +13,7 @@ using System.ComponentModel.Composition;
 using BlackOwl.Models;
 using BlackOwl.Core.Data.Models;
 using BlackCogs.Data.ViewModels.Identity;
+using BlackCogs.Data.Models;
 
 namespace BlackOwl.Controllers
 {

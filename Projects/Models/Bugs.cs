@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using BlackCogs.Data.Models;
 using BlackOwl.Core.Data.Models;
 
 namespace Projects.Models
@@ -25,9 +26,9 @@ namespace Projects.Models
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
-         public virtual BlackOwl.Core.Data.Models.ApplicationUser ReportedBy { get; set; }
+         public virtual ApplicationUser ReportedBy { get; set; }
 
-        public virtual BlackOwl.Core.Data.Models.ApplicationUser EditedBy { get; set; }
+        public virtual ApplicationUser EditedBy { get; set; }
         [Required]
         public virtual Project Project { get; set; }
     }

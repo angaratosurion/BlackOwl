@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BlackCogs.Data.Models;
+using BlackOwl.Core.Data.Models;
 
 namespace BlackOwl.Core.Data.Models
 {

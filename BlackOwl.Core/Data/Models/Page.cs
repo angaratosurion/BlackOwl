@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity.EntityFramework;
+using BlackOwl.Core.Data.Models;
+using BlackCogs.Data.Models;
 
 namespace BlackOwl.Core.Data.Models
 {

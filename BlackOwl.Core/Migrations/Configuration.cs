@@ -4,6 +4,7 @@ namespace BlackOwl.Core.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using BlackCogs.Data.Models;
     using BlackOwl.Core.Data.Models;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;

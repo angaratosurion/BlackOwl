@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using BlackCogs.Data.Models;
 using BlackOwl.Core;
 using BlackOwl.Core.Data.Models;
 using Projects.Models;

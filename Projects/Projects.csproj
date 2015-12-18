@@ -295,6 +295,10 @@
       <Project>{b17ede4e-7c83-40d7-be1b-5b54598f0d30}</Project>
       <Name>BlackCogs</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\MultiPlex\MultiPlex.Core\MultiPlex.Core.csproj">
+      <Project>{03da9457-2f29-4a8a-b5ce-971f68dd8759}</Project>
+      <Name>MultiPlex.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlackOwl.Core\BlackOwl.Core.csproj">
       <Project>{0a876a7b-02f4-4152-8627-a222e78a73b1}</Project>
       <Name>BlackOwl.Core</Name>

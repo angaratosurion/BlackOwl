@@ -8,6 +8,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using BlackOwl.Core.Data.Models;
 using BlackOwl.Core.Data;
+using BlackCogs.Data.Models;
 
 namespace BlackOwl.Core.Application
 {

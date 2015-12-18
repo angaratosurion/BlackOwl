@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Owin;
 using BlackOwl.Core.Data.Models;
 using BlackOwl.Core.Data;
+using BlackCogs.Data.Models;
 
 namespace BlackOwl.Core.Application
 {

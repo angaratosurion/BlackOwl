@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using BlackCogs.Data.Models;
 using BlackOwl.Core.Data.Models;
 
 namespace Projects.Models

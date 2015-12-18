@@ -139,3 +139,5 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csproj.GenerateResource.Cache
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\connectionstrings.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\NLog.config

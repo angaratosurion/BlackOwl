@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 using BlackOwl.Core.Data.Models;
+using MultiPlex.Core.Data.Models;
 
 namespace Projects.Models
 {
@@ -19,7 +20,7 @@ namespace Projects.Models
         public string Name { get; set; }
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
-        public string WikiName { get; set; }
+        public Wiki WikiName { get; set; }
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
