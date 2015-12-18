@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using BlackOwl.Core.Data.Models;
 using MultiPlex.Core.Data.Models;
+using BlackCogs.Data.Models;
 
 namespace Projects.Models
 {
