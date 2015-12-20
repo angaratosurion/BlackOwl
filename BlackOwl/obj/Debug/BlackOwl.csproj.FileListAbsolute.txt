@@ -217,3 +217,5 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.csprojResolveAssemblyReference.cache
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.xsd

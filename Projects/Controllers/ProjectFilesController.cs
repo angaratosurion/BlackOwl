@@ -20,7 +20,7 @@ namespace Projects.Controllers
         ProjectFileManager filmngr;
         public ProjectFilesController()
         {
-            filmngr = new ProjectFileManager(this.Server);
+            filmngr = new ProjectFileManager();
            
         }
        

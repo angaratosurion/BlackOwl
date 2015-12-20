@@ -12,23 +12,23 @@ namespace BlackOwl.Core.Managers
        const string   filesdir="files",AppDataDir="App_Data";
        HttpServerUtilityBase util;
        FileManager filmngr;
-       public PluginManager(HttpServerUtilityBase tul)
-       {
-           if ( tul !=null)
-           {
-               util = tul;
-               filmngr = new FileManager(tul);
-           }
-       }
+       //public PluginManager(HttpServerUtilityBase tul)
+       //{
+       //    if ( tul !=null)
+       //    {
+       //        util = tul;
+       //        filmngr = new FileManager(tul);
+       //    }
+       //}
 
        public string GetFilesPthysicalDir()
        {
            try
            {
                string ap = null;
-               string path = this.filmngr.PhysicalPathFromUrl("~/" + AppDataDir + "/" + filesdir);
+               string path = FileManager.PhysicalPathFromUrl("~/" + AppDataDir + "/" + filesdir);
 
-               if (path != null && this.filmngr.DirectoryExists(path))
+               if (path != null && FileManager.DirectoryExists(path))
                {
                    ap = path;
                }
@@ -48,9 +48,9 @@ namespace BlackOwl.Core.Managers
                string ap = null;
                if (pluginname != null)
                {
-                   string path = this.filmngr.PhysicalPathFromUrl("~/" + AppDataDir + "/" + filesdir + "/" + pluginname);
+                   string path = FileManager.PhysicalPathFromUrl("~/" + AppDataDir + "/" + filesdir + "/" + pluginname);
 
-                   if (path != null && this.filmngr.DirectoryExists(path))
+                   if (path != null && FileManager.DirectoryExists(path))
                    {
                        ap = path;
                    }

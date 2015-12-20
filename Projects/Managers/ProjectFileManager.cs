@@ -15,13 +15,13 @@ namespace Projects.Managers
     public class ProjectFileManager
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        FileManager filemngr;// = new FileManager();
+        FileManager FileManager;// = new FileManager();
         PluginManager plugmanger;
         ReleasesManager relmngr = new ReleasesManager();
-        public ProjectFileManager ( HttpServerUtilityBase tut)
+        public ProjectFileManager ( )
         {
-            filemngr = new FileManager(tut);
-            plugmanger = new PluginManager(tut);
+            FileManager = new FileManager();
+            plugmanger = new PluginManager();
         }
         public void Create(ProjectFiles file,HttpPostedFileBase filcnt)
         {
@@ -35,7 +35,7 @@ namespace Projects.Managers
 
                     string path = Path.Combine(plugmanger.GetPluginFilesPthysicalDir("Projects"),file.Project.Name,
                         release,filcnt.FileName);
-                  Boolean ap=  filemngr.CreateFile(path, filcnt);
+                  Boolean ap=  FileManager.CreateFile(path, filcnt);
                     file.Path = path;
 
                     
@@ -97,9 +97,9 @@ namespace Projects.Managers
             {
                 if (projectFiles != null)
                 {
-                    if (filemngr.FileExists(projectFiles.Path))
+                    if (FileManager.FileExists(projectFiles.Path))
                     {
-                        this.filemngr.DeleteFile(projectFiles.Path);
+                        FileManager.DeleteFile(projectFiles.Path);
                       
                     }
                     db.ProjecFiles.Remove(projectFiles);
