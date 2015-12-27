@@ -12,26 +12,17 @@ using BlackCogs.Data.Models;
 
 namespace BlackOwl.Core.Application
 {
-    public class EmailService : IIdentityMessageService
+    public class EmailService : BlackCogs.Application.EmailService
     {
-        public Task SendAsync(IdentityMessage message)
-        {
-            // Plug in your email service here to send an email.
-            return Task.FromResult(0);
-        }
     }
 
-    public class SmsService : IIdentityMessageService
+    public class SmsService : BlackCogs.Application.SmsService
     {
-        public Task SendAsync(IdentityMessage message)
-        {
-            // Plug in your SMS service here to send a text message.
-            return Task.FromResult(0);
-        }
+        
     }
 
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
-    public class ApplicationUserManager : UserManager<ApplicationUser>
+    public class ApplicationUserManager :  BlackCogs.Application.ApplicationUserManager//UserManager<ApplicationUser>
     {
         public ApplicationUserManager(IUserStore<ApplicationUser> store)
             : base(store)
@@ -87,7 +78,7 @@ namespace BlackOwl.Core.Application
     }
 
     // Configure the application sign-in manager which is used in this application.
-    public class ApplicationSignInManager : SignInManager<ApplicationUser, string>
+    public class ApplicationSignInManager : BlackCogs.Application.ApplicationSignInManager//<ApplicationUser, string>
     {
         public ApplicationSignInManager(ApplicationUserManager userManager, IAuthenticationManager authenticationManager)
             : base(userManager, authenticationManager)
