@@ -158,10 +158,6 @@
     <Compile Include="Managers\ProjectFileManager.cs" />
     <Compile Include="Managers\ProjectNewsManager.cs" />
     <Compile Include="Managers\ReleasesManager.cs" />
-    <Compile Include="Migrations\201507291940039_initial.cs" />
-    <Compile Include="Migrations\201507291940039_initial.Designer.cs">
-      <DependentUpon>201507291940039_initial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bugs.cs" />
     <Compile Include="Models\ChangeLog.cs" />
@@ -284,11 +280,6 @@
     <None Include="Views\_ViewStart.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507291940039_initial.resx">
-      <DependentUpon>201507291940039_initial.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BlackCogs\BlackCogs\BlackCogs.csproj">

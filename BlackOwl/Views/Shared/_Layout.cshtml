@@ -25,7 +25,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @{
-                        var verbs = BlackOwl.Core.Bootstrapper.GetVerbsForCategory("Navigation");
+                        var verbs = BlackCogs.Bootstrapper.GetVerbsForCategory("Navigation");
                         foreach (var verb in verbs)
                         {
                             <li>< @Html.ActionLink(verb.Name, verb.Action, verb.Controller)</li>

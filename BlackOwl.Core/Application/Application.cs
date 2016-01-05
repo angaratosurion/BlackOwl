@@ -1,16 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using BlackOwl.Core.Controllers;
-using BlackCogs.Interfaces;
-using BlackOwl.Core.Views;
+using BlackCogs.Views.Engines;
 
 namespace BlackOwl.Core.Application
 {

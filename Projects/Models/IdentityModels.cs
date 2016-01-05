@@ -6,6 +6,7 @@ using BlackOwl.Core.Data;
 using BlackOwl.Core.Data.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using MultiPlex.Core.Data.Models;
 
 namespace Projects.Models
 {
@@ -21,51 +22,64 @@ namespace Projects.Models
     //}
    
 
-    public class ApplicationDbContext :  IdentityDbContext<ApplicationUser>
-    //public class ApplicationDbContext : Context
+   // public class ApplicationDbContext :IdentityDbContext<ApplicationUser>
+  public class ApplicationDbContext : Context
 
     {
 
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
-        {
-        }
+        //public ApplicationDbContext()
+        //    : base("DefaultConnection", throwIfV1Schema: false)
+        //{
+        //}
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Projects.Models.FileReleases>()
                 .HasRequired(c => c.UploadedBy)
                 .WithMany()
-                .WillCascadeOnDelete(true);
+                .WillCascadeOnDelete(false);
             modelBuilder.Entity<Projects.Models.FileReleases>()
                .HasRequired(c => c.UploadedBy)
               .WithRequiredDependent()
-               .WillCascadeOnDelete(true);
+               .WillCascadeOnDelete(false);
             modelBuilder.Entity<Projects.Models.FileReleases>()
               .HasRequired(c => c.UploadedBy)
              .WithRequiredPrincipal()
-              .WillCascadeOnDelete(true);
+              .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Projects.Models.FileReleases>()
+              .HasRequired(c => c.Project)
+             .WithRequiredPrincipal()
+              .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Project>()
+                .HasRequired(c => c.Releases)
+                .WithMany()
+                .WillCascadeOnDelete(false);
             //modelBuilder.Entity<ProjectFiles>()
-            //    .HasRequired(c => c.Release)
-            //    .WithMany()                
-            //    .WillCascadeOnDelete(true);
-            //modelBuilder.Entity<ProjectFiles>()
+            modelBuilder.Entity<Project>()
+               .HasRequired(c => c.Releases)
+               .WithMany()
+               .WillCascadeOnDelete(false);
             //    .HasRequired(c => c.Release)
             //    .WithRequiredDependent()
-            //    .WillCascadeOnDelete(true);
+            //    .WillCascadeOnDelete(false);
             //modelBuilder.Entity<ProjectFiles>()
             //    .HasRequired(c => c.Release)
             //    .WithRequiredPrincipal()
-            //    .WillCascadeOnDelete(true);
+            //    .WillCascadeOnDelete(false);
             //modelBuilder.Entity<ProjectFiles>()
             //  .HasRequired(c => c.Release)
             //  .WithOptional()
-            //  .WillCascadeOnDelete(true);
+            //  .WillCascadeOnDelete(false);
+            modelBuilder.Entity<Wiki>()
+            .HasRequired(f => f.Administrator)
+            .WithMany()
+            .WillCascadeOnDelete(false);
 
 
-           
-            
-          
-            base.OnModelCreating(modelBuilder);
+
+
+
+
         }
         public static ApplicationDbContext Create()
         {
@@ -79,8 +93,9 @@ namespace Projects.Models
         public DbSet<ChangeLog> ChangeLogs { get; set; }
         public DbSet<Bugs> Bugs { get; set; }
 
-        public System.Data.Entity.DbSet<BlackOwl.Core.Data.Models.Plugin> Plugins { get; set; }
+        //public System.Data.Entity.DbSet<BlackOwl.Core.Data.Models.Plugin> Plugins { get; set; }
        
+
 
 
     }
