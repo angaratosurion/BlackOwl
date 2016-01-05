@@ -134,12 +134,13 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\bin\System.Web.
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\obj\Debug\BlackOwl.csprojResolveAssemblyReference.cache
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\obj\Debug\BlackOwl.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\obj\Debug\BlackOwl.pdb
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Net.Http.Formatting.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.config
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\connectionstrings.config
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackOwl.dll.config
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackOwl.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackOwl.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\Antlr3.Runtime.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackCogs.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackOwl.Core.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\EntityFramework.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\EntityFramework.SqlServer.dll
@@ -172,11 +173,12 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.WebPages.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.WebPages.Razor.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\WebGrease.dll
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackCogs.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\MultiPlex.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.Http.dll
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\ColorCode.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Net.Http.Formatting.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackCogs.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackOwl.Core.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\Antlr3.Runtime.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\EntityFramework.xml
@@ -207,14 +209,12 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.WebPages.Deployment.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.WebPages.Razor.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.Optimization.xml
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\BlackCogs.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\MultiPlex.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\MultiPlex.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Web.Http.xml
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\ColorCode.pdb
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\System.Net.Http.Formatting.xml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.csprojResolveAssemblyReference.cache
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\obj\Debug\BlackOwl.pdb
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\bin\NLog.config
