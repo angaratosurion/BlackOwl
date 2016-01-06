@@ -61,7 +61,7 @@ namespace BlackOwl.Core.Data
         }
      public IDbSet<Plugin> Plugins { get; set; }
         public IDbSet<Page> Pages { get; set; }
-        //public IDbSet<News> News { get; set; }
+        public IDbSet<News> News { get; set; }
         public IDbSet<Category> Catgories { get; set; }
         public IDbSet<Tag> Tags { get; set; }
         //public IDbSet<Files> Files { get; set; }

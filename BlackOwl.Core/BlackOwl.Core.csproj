@@ -161,7 +161,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\Application.cs" />
     <Compile Include="Application\App_Start\BundleConfig.cs" />
     <Compile Include="Application\App_Start\FilterConfig.cs" />
     <Compile Include="Application\App_Start\IdentityConfig.cs" />
@@ -170,7 +169,10 @@
     <Compile Include="Application\info.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="CommonTools.cs" />
-    <Compile Include="Controllers\CustomControllerFactory.cs" />
+    <Compile Include="Controllers\Factory\CustomControllerFactory.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\PluginsController.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Data\Models\Comment.cs" />
     <Compile Include="Data\Models\Files.cs" />

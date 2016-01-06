@@ -3,7 +3,7 @@ using System.Web.Mvc;
 
 namespace BlackOwl.Core.Application
 {
-    public class FilterConfig
+    public class FilterConfig:BlackCogs.Application.FilterConfig
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {

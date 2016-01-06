@@ -33,7 +33,7 @@ namespace BlackOwl.Models
             return new ApplicationDbContext();
         }
 
-        public System.Data.Entity.IDbSet<BlackOwl.Core.Data.Models.News> News { get; set; }
+    
        
 
 

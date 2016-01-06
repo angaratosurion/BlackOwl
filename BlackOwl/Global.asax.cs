@@ -1,4 +1,5 @@
 ﻿using System;
+using BlackCogs.Application;
 using BlackOwl.Core;
 using BlackOwl.Core.Application;
 

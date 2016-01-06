@@ -7,7 +7,7 @@ using System.Web.Routing;
 
 namespace BlackOwl.Core.Application
 {
-    public class RouteConfig
+    public class RouteConfig:BlackCogs.Application.RouteConfig
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
