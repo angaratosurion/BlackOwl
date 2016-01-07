@@ -73,6 +73,7 @@ namespace BlackOwl.Core.Application
                 manager.UserTokenProvider = 
                     new DataProtectorTokenProvider<ApplicationUser>(dataProtectionProvider.Create("ASP.NET Identity"));
             }
+            CommonTools._userManager = manager;
             return manager;
         }
     }
@@ -92,7 +93,9 @@ namespace BlackOwl.Core.Application
 
         public static ApplicationSignInManager Create(IdentityFactoryOptions<ApplicationSignInManager> options, IOwinContext context)
         {
-            return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
+            CommonTools._signInManager= new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
+            // return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
+            return (BlackOwl.Core.Application.ApplicationSignInManager)CommonTools._signInManager;
         }
     }
 }

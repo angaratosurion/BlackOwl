@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlackOwl.Core
 {
-   public class CommonTools
+   public class CommonTools:BlackCogs.CommonTools
     {
        public Boolean isEmpty(string str)
        {

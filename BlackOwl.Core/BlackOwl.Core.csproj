@@ -169,6 +169,7 @@
     <Compile Include="Application\info.cs" />
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="CommonTools.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Factory\CustomControllerFactory.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsController.cs" />

@@ -4,6 +4,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOwl", "BlackOwl\BlackOwl.csproj", "{6CE16B16-7F21-47BA-AA15-0E7824A33494}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03DA9457-2F29-4A8A-B5CE-971F68DD8759} = {03DA9457-2F29-4A8A-B5CE-971F68DD8759}
+		{3EA6CBE4-2523-4BB3-8926-9A1746774741} = {3EA6CBE4-2523-4BB3-8926-9A1746774741}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F6BE40BC-42CE-46D0-95EF-D06DAE95EA64}"
 	ProjectSection(SolutionItems) = preProject

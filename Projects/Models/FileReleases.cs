@@ -12,7 +12,8 @@ namespace Projects.Models
     //[Table("ProjectRleases")]
     public class FileReleases
     {
-        [Required]
+       // [Required]
+        
         public int Id { get; set; }
         public string Tittle { get; set; }
          [Required]
