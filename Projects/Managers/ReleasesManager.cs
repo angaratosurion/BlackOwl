@@ -11,6 +11,7 @@ namespace Projects.Managers
     public class ReleasesManager
     {
         ApplicationDbContext db = new ApplicationDbContext();
+        ProjectFileManager projfilmngr = new ProjectFileManager();
         public  void CreateNew (FileReleases release)
         {
             try
@@ -43,6 +44,11 @@ namespace Projects.Managers
             {
                 if ( fileReleases !=null)
                 {
+                    List<ProjectFiles> files = this.projfilmngr.DetailsByReleaseId(fileReleases.Id);
+                    foreach ( var f in files)
+                    {
+                        projfilmngr.Delete(f);
+                    }
                     db.FileReleases.Remove(fileReleases);
                     db.SaveChanges();
                 }
@@ -50,7 +56,23 @@ namespace Projects.Managers
             }
               catch (Exception ex){CommonTools.ErrorReporting(ex);  }
         }
-        
+        public void DeleteByProjectId(int? id)
+        {
+            try
+            {
+                if (id != null)
+                {
+                    List<FileReleases> files = this.GetAllReleasesByProjectId(id);
+                    foreach (var f in files)
+                    {
+                        this.Delete(f);
+                    }
+                }
+
+            }
+            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
+        }
+
         public FileReleases GetDetailsById(int?  id)
         {
             try

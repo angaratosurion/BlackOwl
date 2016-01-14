@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Projects.Managers;
 using Projects.Models;
 
 namespace Projects.Controllers
@@ -15,12 +16,13 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class ProjectsController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+       // private ApplicationDbContext db = new ApplicationDbContext();
+       ProjectsManager mngr = new ProjectsManager();
 
         // GET: Projects
         public ActionResult Index()
         {
-            return View(db.Projecs.ToList());
+            return View(mngr.List());
         }
 
         // GET: Projects/Details/5
@@ -30,7 +32,7 @@ namespace Projects.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Project project = db.Projecs.Find(id);
+            Project project = this.mngr.GetProjectById(Convert.ToInt32(id));
             if (project == null)
             {
                 return HttpNotFound();
@@ -54,8 +56,7 @@ namespace Projects.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Projecs.Add(project);
-                db.SaveChanges();
+                this.mngr.Create(project, this.User.Identity.Name);
                 return RedirectToAction("Index");
             }
 
@@ -70,7 +71,7 @@ namespace Projects.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Project project = db.Projecs.Find(id);
+            Project project = this.mngr.GetProjectById(Convert.ToInt32(id));
             if (project == null)
             {
                 return HttpNotFound();
@@ -87,8 +88,7 @@ namespace Projects.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(project).State = EntityState.Modified;
-                db.SaveChanges();
+                this.mngr.Edit(project);
                 return RedirectToAction("Index");
             }
             return View(project);
@@ -102,7 +102,7 @@ namespace Projects.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Project project = db.Projecs.Find(id);
+            Project project = this.mngr.GetProjectById(Convert.ToInt32(id));
             if (project == null)
             {
                 return HttpNotFound();
@@ -115,19 +115,12 @@ namespace Projects.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Project project = db.Projecs.Find(id);
-            db.Projecs.Remove(project);
-            db.SaveChanges();
+            
+                this.mngr.Delete(id, this.User.Identity.Name);
+            
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+       
     }
 }

@@ -32,6 +32,33 @@ namespace Projects.Managers
             }
 
         }
+        public List<ProjectNews> ListByProjectId(int? id)
+        {
+            try
+            {
+                List<ProjectNews> ap = null,news;
+                if (id != null)
+                { ap = new List<ProjectNews>();
+                    news = this.db.ProjecNews.Where(x => x.Project.Id == id).ToList();
+                     if ( news !=null)
+                    {
+                        ap = news;
+                    }
+
+                    
+
+                }
+               
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+
+            }
+
+        }
         public ProjectNews Create(ProjectNews projectNews,string user)
         {
             try
@@ -100,6 +127,26 @@ namespace Projects.Managers
                 
             }
               catch (Exception ex){CommonTools.ErrorReporting(ex);  }
+
+        }
+        public void DeleteByProjectId(int? id)
+        {
+            try
+            {
+                if (id != null)
+                {
+                    List<ProjectNews> news = this.ListByProjectId(id);
+                     if ( news !=null)
+                    {
+                        foreach( var n in news )
+                        {
+                            this.Delete(n.Id);
+                        }
+                    }
+                }
+
+            }
+            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
 
         }
     }

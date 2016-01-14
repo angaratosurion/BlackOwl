@@ -21,11 +21,11 @@ namespace Projects.Models
         public string Name { get; set; }
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
-        public Wiki WikiName { get; set; }
+        public Wiki Wiki { get; set; }
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
-        public  String AdmininstratorId { get; set; }
+        public  ApplicationUser Admininstrator { get; set; }
         public virtual List<ApplicationUser> Members { get; set; }
         public virtual List<ProjectNews> News { get; set; }
         public virtual List<FileReleases> Releases { get; set; }

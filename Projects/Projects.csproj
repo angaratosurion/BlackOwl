@@ -156,7 +156,9 @@
     <Compile Include="Managers\BugManager.cs" />
     <Compile Include="Managers\ChangeLogManager.cs" />
     <Compile Include="Managers\ProjectFileManager.cs" />
+    <Compile Include="Managers\ProjectsManager.cs" />
     <Compile Include="Managers\ProjectNewsManager.cs" />
+    <Compile Include="Managers\ProjectUserManager.cs" />
     <Compile Include="Managers\ReleasesManager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bugs.cs" />

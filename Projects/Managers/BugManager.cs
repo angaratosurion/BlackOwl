@@ -19,17 +19,10 @@ namespace Projects.Managers
                 List<Bugs> ap = null;
                 if (projectid > 0)
                 {
-                    List<Bugs> b = this.db.Bugs.ToList();
+                    List<Bugs> b = this.db.Bugs.Where(x => x.Project.Id == projectid).ToList();
                     if (b != null)
                     {
-                        ap = new List<Bugs>();
-                        foreach (Bugs bg in b)
-                        {
-                            if (bg.Project.Id == projectid)
-                            {
-                                ap.Add(bg);
-                            }
-                        }
+                        ap = b;
 
 
 
@@ -85,6 +78,22 @@ namespace Projects.Managers
 
             }
               catch (Exception ex){CommonTools.ErrorReporting(ex);  }
+        }
+        public void DeleteByProjectId(int? projectid)
+        {
+            try
+            {
+                if (projectid != null)
+                {
+                    var bugs = this.BugsByProjectId(projectid);
+                    foreach( var b in bugs)
+                    {
+                        this.Delete(b);
+                    }
+                }
+
+            }
+            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
         }
     }
 }

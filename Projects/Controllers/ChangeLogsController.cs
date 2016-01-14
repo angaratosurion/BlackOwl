@@ -24,7 +24,7 @@ namespace Projects.Controllers
         {
           //  var changeLogs = db.ChangeLogs.Include(c => c.Releases);
            // return View(changeLogs.ToList());
-            ChangeLog ap = this.chlmngr.GetChangeLogsByReelaseId(releaseid);
+            List<ChangeLog> ap = this.chlmngr.GetChangeLogsByReelaseId(releaseid);
             return View(ap);
         }
 

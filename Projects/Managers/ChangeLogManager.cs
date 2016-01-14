@@ -33,12 +33,12 @@ namespace Projects.Managers
             }
         }
 
-        public ChangeLog GetChangeLogsByReelaseId(int? id)
+        public List<ChangeLog> GetChangeLogsByReelaseId(int? id)
         {
             try
             {
-                ChangeLog ap = null;
-                var changeLogs = db.ChangeLogs.First(c => c.Releases.Id == id);
+                List<ChangeLog> ap = null;
+                var changeLogs = db.ChangeLogs.Where(c => c.Releases.Id == id).ToList();
                 ap = changeLogs;
 
 
@@ -47,16 +47,14 @@ namespace Projects.Managers
             }
             catch (Exception ex) { CommonTools.ErrorReporting(ex); return null; }
         }
-        public ChangeLog GetChangeLogsByProjectId(int? id)
+        public List<ChangeLog> GetChangeLogsByProjectId(int? id)
         {
             try
             {
                 List<ChangeLog> ap = null;
-                var changeLogs = db.ChangeLogs.First(c => c.Project.Id == id);
-                return changeLogs;//.ToList(); ;
-
-
-                //return ap;
+               
+                ap = db.ChangeLogs.Where(x => x.Project.Id == id).ToList();
+               return ap;
 
             }
             catch (Exception ex) { CommonTools.ErrorReporting(ex); return null; }
@@ -110,6 +108,22 @@ namespace Projects.Managers
                 {
                     db.ChangeLogs.Remove(changeLog);
                     db.SaveChanges();
+                }
+
+            }
+            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
+        }
+        public void DeleteByProjectId(int? id)
+        {
+            try
+            {
+                List<ChangeLog> changeLog = GetChangeLogsByProjectId(id);
+                if (changeLog != null)
+                {
+                    foreach( var c in changeLog)
+                    {
+                        this.Delete(c.Id);
+                    }
                 }
 
             }

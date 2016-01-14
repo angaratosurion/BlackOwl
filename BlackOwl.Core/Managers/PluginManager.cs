@@ -64,6 +64,31 @@ namespace BlackOwl.Core.Managers
                
            }
        }
+        public string GetPluginFilesRelativeDir(string pluginname)
+        {
+            try
+            {
+                string ap = null;
+                if (pluginname != null)
+                {
+                    string path = "~/" + AppDataDir + "/" + filesdir + "/" + pluginname;
+
+                    if (path != null && FileManager.DirectoryExists(path))
+                    {
+                        ap = path;
+                    }
+                }
+
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+                CommonTools.ErrorReporting(ex);
+                return null;
+
+            }
+        }
 
     }
 }
