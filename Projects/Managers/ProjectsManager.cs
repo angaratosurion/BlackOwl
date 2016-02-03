@@ -16,23 +16,23 @@ namespace Projects.Managers
 {
     public class ProjectsManager
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
-        ProjectUserManager usrmng = new ProjectUserManager();
+         private ProjectsDbContext db =Statics.db;
+        ProjectUserManager usrmng = Statics.usrmng;
         MultiPlex.Core.Managers.WikiManager wkmngr = new MultiPlex.Core.Managers.WikiManager();
-        PluginManager plugmanger = new PluginManager();
+        PluginManager plugmanger = Statics.plugmanger;
         BlackOwl.Core.Managers.FileManager filemngr = new BlackOwl.Core.Managers.FileManager();
-        ReleasesManager relmngr = new ReleasesManager();
+        ReleasesManager relmngr = Statics.relmngr;
         //ProjectFileManager projfilemngr = new ProjectFileManager();
-        BugManager bugmngr = new BugManager();
-        ChangeLogManager chgMngr = new ChangeLogManager();
-        ProjectNewsManager newMngr = new ProjectNewsManager();
+        BugManager bugmngr = Statics.bugmngr;
+        ChangeLogManager chgMngr = Statics.chgMngr;
+        ProjectNewsManager newMngr = Statics.newMngr;
         public List<Project> List()
         {
             try
             {
                 List<Project> ap = null;
 
-                ap = db.Projecs.ToList();
+                ap = db.Projects.ToList();
                 return ap;
 
             }
@@ -49,23 +49,48 @@ namespace Projects.Managers
             {
 
                 if (project != null && CommonTools.isEmpty(user) == false
-                   && usrmng.UserExists(user) == true)
+                  )// && usrmng.UserExists(user) == true)
                 {
-                    Wiki wk = new Wiki();
-                    wk.Name = project.Name;
-                    wk.WikiTitle = project.Name;
-                    wk.Administrator = usrmng.GetUser(user);
-                    wk.Moderators = new List<ApplicationUser>();
-                    wk.Moderators.Add(wk.Administrator);
-                    wkmngr.CreateWiki(wk);
-                    project.Admininstrator= usrmng.GetUser(user);
-                    project.Wiki = wk;
-                    db.Projecs.Add(project);
-                    db.SaveChanges();
-                    string path = Path.Combine(plugmanger.GetPluginFilesRelativeDir("Projects"), project.Name);
-                    FileManager.CreateDirectory(path);
+                    if (usrmng == null)
+                    {
+                        usrmng = new ProjectUserManager();
+                    }
+                    ApplicationUser admin = usrmng.GetUser(user);
+                    if (admin != null)
+                    {
 
+
+                        //Wiki wk = new Wiki();
+                        //wk.Name = project.Name;
+                        //wk.WikiTitle = project.Name;
+                        //wk.Administrator = admin;
+                        //wk.Moderators = new List<ApplicationUser>();
+                        //wk.Moderators.Add(admin);
+                        //wkmngr.CreateWiki(wk);
+                        project.Admininstrator = admin;
+                        project.WikiName = project.Name;
+                       project.News = new List<ProjectNews>();
+                        //project.Releases = new List<FileReleases>();
+                        //project.Members = new List<ApplicationUser>();
+                        if (db == null)
+                        {
+                            db = new ProjectsDbContext();
+                        }
+                        //ProjectUser projusr = new ProjectUser();
+                      
+                        //project.Admininstrator = admin;
+                        //db.Configuration.ValidateOnSaveEnabled = false;
+                        //Statics.usersprojmngr.AddNewProjectToUser(admin, project);
+                        db.Projects.Add(project);
+                      
+                        
+                        db.SaveChanges();
+                        string path = Path.Combine(plugmanger.GetPluginFilesRelativeDir("Projects"), project.Name);
+                        FileManager.CreateDirectory(path);
+
+                    }
                 }
+            
 
                 
 
@@ -74,7 +99,7 @@ namespace Projects.Managers
             }
             catch (Exception ex)
             {
-                CommonTools.ErrorReporting(ex); 
+                CommonTools.ErrorReporting(ex);
 
             }
 
@@ -89,7 +114,7 @@ namespace Projects.Managers
 
                  if ( id >=0)
                 {
-                  ap = db.Projecs.Find(id);
+                  ap = db.Projects.Find(id);
                 }
 
 
@@ -128,16 +153,16 @@ namespace Projects.Managers
                     if ( proj !=null && usrmng.UserHasAccessToProject(usrmng.GetUser(user), proj, true) == true)
                     {
                         string path = Path.Combine(plugmanger.GetPluginFilesRelativeDir("Projects"), proj.Name);
-                        if ( proj.Wiki !=null && proj.Wiki.Name !=null)
+                        if ( proj.WikiName !=null )
                         {
-                            this.wkmngr.DeleteWiki(proj.Wiki.Name);
+                            this.wkmngr.DeleteWiki(proj.WikiName);
                         }
                         this.relmngr.DeleteByProjectId(id);
                         this.bugmngr.DeleteByProjectId(id);
                         this.chgMngr.DeleteByProjectId(id);
                         this.newMngr.DeleteByProjectId(id);
 
-                        db.Projecs.Remove(proj);
+                        db.Projects.Remove(proj);
                         db.SaveChanges();
                         FileManager.DeleteDirectory(path);
                     }

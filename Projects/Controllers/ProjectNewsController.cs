@@ -16,7 +16,7 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class ProjectNewsController : Controller
     {
-        ProjectNewsManager mngr = new ProjectNewsManager();
+        ProjectNewsManager mngr = Statics.newMngr;
 
         // GET: ProjectNews
         public ActionResult Index()

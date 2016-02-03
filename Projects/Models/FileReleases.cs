@@ -12,7 +12,7 @@ namespace Projects.Models
     //[Table("ProjectRleases")]
     public class FileReleases
     {
-       // [Required]
+       [Required]
         
         public int Id { get; set; }
         public string Tittle { get; set; }
@@ -25,13 +25,14 @@ namespace Projects.Models
         public Byte[] RowVersion { get; set; }
 
         [Required]
-        public virtual List<ProjectFiles> Files { get; set; }
+        public List<ProjectFiles> Files { get; set; }
         [Required]
-        public virtual Project Project { get; set; }
-       [Required]
-        public virtual ApplicationUser UploadedBy { get; set; }
+        public Project Project { get; set; }
+       
+       
+        public ApplicationUser UploadedBy { get; set; }
       //
        // [Required]
-        public virtual ChangeLog ChangeLog { get; set; }
+        public ChangeLog ChangeLog { get; set; }
     }
 }

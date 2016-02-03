@@ -16,11 +16,11 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class ProjectFilesController : Controller
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
-        ProjectFileManager filmngr;
+       // private ApplicationDbContext db = new ApplicationDbContext();
+        ProjectFileManager filmngr=Statics.projfilmngr;
         public ProjectFilesController()
         {
-            filmngr = new ProjectFileManager();
+           // filmngr = new ProjectFileManager();
            
         }
        
@@ -135,7 +135,7 @@ namespace Projects.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+               // db.Dispose();
             }
             base.Dispose(disposing);
         }

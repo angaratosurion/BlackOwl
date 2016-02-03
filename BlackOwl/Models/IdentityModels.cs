@@ -21,21 +21,20 @@ namespace BlackOwl.Models
     //}
    
 
-    public class ApplicationDbContext : BlackOwl.Core.Data.Context//IdentityDbContext<ApplicationUser>
-    {
-        //public ApplicationDbContext()
-        //    : base("DefaultConnection", throwIfV1Schema: false)
-        //{
-        //}
+    //public class ApplicationDbContext : BlackOwl.Core.Data.Context//IdentityDbContext<ApplicationUser>
+    //{
+    //    //public ApplicationDbContext()
+    //    //    : base("DefaultConnection", throwIfV1Schema: false)
+    //    //{
+    //    //}
 
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
+    //    public static ApplicationDbContext Create()
+    //    {
+    //        return new ApplicationDbContext();
+    //    }
 
     
        
 
 
     }
-}

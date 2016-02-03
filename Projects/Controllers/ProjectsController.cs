@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Routing;
 using Projects.Managers;
 using Projects.Models;
 
@@ -16,8 +17,8 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class ProjectsController : Controller
     {
-       // private ApplicationDbContext db = new ApplicationDbContext();
-       ProjectsManager mngr = new ProjectsManager();
+        // private ApplicationDbContext db = new ApplicationDbContext();
+        ProjectsManager mngr = Statics.mngr;
 
         // GET: Projects
         public ActionResult Index()
@@ -44,6 +45,7 @@ namespace Projects.Controllers
         [Authorize]
         public ActionResult Create()
         {
+            //Project proj= new Project();
             return View();
         }
 
@@ -54,13 +56,17 @@ namespace Projects.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Name,Description")] Project project)
         {
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            {  //project.Admininstrator = Statics.usrmng.GetUser(this.User.Identity.Name);
+
                 this.mngr.Create(project, this.User.Identity.Name);
-                return RedirectToAction("Index");
+                RouteValueDictionary vals = new RouteValueDictionary();
+                vals.Add("newwikiname", project.Name);
+               return RedirectToAction("Create", "HomeWiki",vals);
+                //return RedirectToAction("Index");
             }
 
-            return View(project);
+            //return View(project);
         }
 
         // GET: Projects/Edit/5

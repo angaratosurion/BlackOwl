@@ -13,7 +13,7 @@ namespace Projects.Managers
 {
     public class ProjectNewsManager
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private  ProjectsDbContext db =Statics.db;
 
         public List<ProjectNews> List()
         {
@@ -21,7 +21,7 @@ namespace Projects.Managers
             {
                 List<ProjectNews> ap = null;
 
-                ap = db.ProjecNews.ToList();
+                ap = db.ProjectNews.ToList();
                 return ap;
 
             }
@@ -39,7 +39,7 @@ namespace Projects.Managers
                 List<ProjectNews> ap = null,news;
                 if (id != null)
                 { ap = new List<ProjectNews>();
-                    news = this.db.ProjecNews.Where(x => x.Project.Id == id).ToList();
+                    news = this.db.ProjectNews.Where(x => x.Project.Id == id).ToList();
                      if ( news !=null)
                     {
                         ap = news;
@@ -71,7 +71,7 @@ namespace Projects.Managers
                 if (usr != null)
                 {
                     projectNews.Author = usr;
-                    db.ProjecNews.Add(projectNews);
+                    db.ProjectNews.Add(projectNews);
                     db.SaveChanges();
                     ap = projectNews;
                 }
@@ -90,7 +90,7 @@ namespace Projects.Managers
 
                 if ( id!=null)
                 {
-                    ap = db.ProjecNews.Find(id);
+                    ap = db.ProjectNews.Find(id);
 
                 }
 
@@ -120,8 +120,8 @@ namespace Projects.Managers
             {
                 if (id != null)
                 {
-                    ProjectNews projectNews = db.ProjecNews.Find(id);
-                    db.ProjecNews.Remove(projectNews);
+                    ProjectNews projectNews = db.ProjectNews.Find(id);
+                    db.ProjectNews.Remove(projectNews);
                     db.SaveChanges();  
                 }
                 

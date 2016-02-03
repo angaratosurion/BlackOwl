@@ -22,9 +22,9 @@ namespace Projects.Models
         public Byte []  RowVersion { get; set; }
         [Required]
         
-        public virtual Project Project { get; set; }
+        public Project Project { get; set; }
       [Required]
-        public virtual FileReleases Releases { get; set; }
+        public FileReleases Releases { get; set; }
       
 
     }

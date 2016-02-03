@@ -14,14 +14,13 @@ namespace Projects.Managers
     
     public class ProjectFileManager
     {
-        ApplicationDbContext db = new ApplicationDbContext();
-        FileManager FileManager;// = new FileManager();
-        PluginManager plugmanger;
-        ReleasesManager relmngr = new ReleasesManager();
+         private ProjectsDbContext db =Statics.db;
+        FileManager FileManager = Statics.FileManager;// = new FileManager();
+        PluginManager plugmanger=Statics.plugmanger;
+        ReleasesManager relmngr = Statics.relmngr;
         public ProjectFileManager ( )
         {
-            FileManager = new FileManager();
-            plugmanger = new PluginManager();
+           
         }
         public void Create(ProjectFiles file,HttpPostedFileBase filcnt)
         {
@@ -40,7 +39,7 @@ namespace Projects.Managers
 
                     
 
-                    db.ProjecFiles.Add(file);
+                    db.ProjectFiles.Add(file);
                     db.SaveChanges();
                     
                     
@@ -54,7 +53,7 @@ namespace Projects.Managers
         {
             try
             {
-                return db.ProjecFiles.Find(id);
+                return db.ProjectFiles.Find(id);
             }
             catch (Exception ex)
             {
@@ -66,7 +65,7 @@ namespace Projects.Managers
         {
             try
             {
-                return db.ProjecFiles.Where(s => s.ReleaseId == id).ToList();
+                return db.ProjectFiles.Where(s => s.ReleaseId == id).ToList();
             }
             catch (Exception ex)
             {
@@ -102,7 +101,7 @@ namespace Projects.Managers
                         FileManager.DeleteFile(projectFiles.Path);
                       
                     }
-                    db.ProjecFiles.Remove(projectFiles);
+                    db.ProjectFiles.Remove(projectFiles);
                     db.SaveChanges();
                 }
 

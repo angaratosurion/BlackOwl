@@ -7,6 +7,7 @@ using BlackOwl.Core.Data.Models;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using MultiPlex.Core.Data.Models;
+using Projects.Models;
 
 namespace Projects.Models
 {
@@ -23,7 +24,7 @@ namespace Projects.Models
    
 
    // public class ApplicationDbContext :IdentityDbContext<ApplicationUser>
-  public class ApplicationDbContext : Context
+  public class ProjectsDbContext : Context
 
     {
 
@@ -59,6 +60,7 @@ namespace Projects.Models
                .HasRequired(c => c.Releases)
                .WithMany()
                .WillCascadeOnDelete(false);
+
             //    .HasRequired(c => c.Release)
             //    .WithRequiredDependent()
             //    .WillCascadeOnDelete(false);
@@ -74,27 +76,38 @@ namespace Projects.Models
             .HasRequired(f => f.Administrator)
             .WithMany()
             .WillCascadeOnDelete(false);
+              
+            modelBuilder.Entity<UsersProjects>()
+                .HasKey(u =>new  { u.UserId, u.ProjectsId});
 
+            modelBuilder.Entity<ProjectUser>()
+                .ToTable("AspNetUsers");
+
+
+            this.Configuration.ValidateOnSaveEnabled = false;
 
 
 
 
 
         }
-        public static ApplicationDbContext Create()
+        public static  ProjectsDbContext Create()
         {
-            return new ApplicationDbContext();
+            return new ProjectsDbContext();
         }
 
-        public System.Data.Entity.DbSet<Project> Projecs { get; set; }
-        public System.Data.Entity.DbSet<ProjectNews> ProjecNews { get; set; }
-        public System.Data.Entity.DbSet<ProjectFiles> ProjecFiles { get; set; }
+        public System.Data.Entity.DbSet<Project> Projects { get; set; }
+        public System.Data.Entity.DbSet<ProjectNews> ProjectNews { get; set; }
+        public System.Data.Entity.DbSet<ProjectFiles> ProjectFiles { get; set; }
         public System.Data.Entity.DbSet<FileReleases> FileReleases { get; set; }
         public DbSet<ChangeLog> ChangeLogs { get; set; }
         public DbSet<Bugs> Bugs { get; set; }
+        public DbSet<UsersProjects> UsersProjects { get; set; }
+        public DbSet<ProjectUser> ProjectUsers { get; set; }
+
 
         //public System.Data.Entity.DbSet<BlackOwl.Core.Data.Models.Plugin> Plugins { get; set; }
-       
+
 
 
 

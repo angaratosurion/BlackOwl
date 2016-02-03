@@ -21,16 +21,17 @@ namespace Projects.Models
         public string Name { get; set; }
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
-        public Wiki Wiki { get; set; }
+        public string WikiName { get; set; }
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
-        public  ApplicationUser Admininstrator { get; set; }
-        public virtual List<ApplicationUser> Members { get; set; }
-        public virtual List<ProjectNews> News { get; set; }
-        public virtual List<FileReleases> Releases { get; set; }
-        public virtual List<ChangeLog> ChangeLogs { get; set; }
-        public virtual List<Bugs> Bugs { get; set; }
+        
+        public   ApplicationUser Admininstrator { get; set; }
+        public List<ApplicationUser> Members { get; set; }
+        public List<ProjectNews> News { get; set; }
+        public List<FileReleases> Releases { get; set; }
+        public List<ChangeLog> ChangeLogs { get; set; }
+        public List<Bugs> Bugs { get; set; }
 
       
      

@@ -10,7 +10,7 @@ namespace Projects.Managers
 {
     public class BugManager
     {
-        private ApplicationDbContext db = new ApplicationDbContext();
+        private   ProjectsDbContext db =Statics.db;
 
         public List<Bugs> BugsByProjectId(int?projectid)
         {

@@ -12,7 +12,7 @@ namespace Projects.Models
     public class ProjectFiles:Files
     {
         [Required]
-        public virtual Project Project { get; set; }
+        public Project Project { get; set; }
       [Required]
         public int ReleaseId { get; set; }
         [Timestamp]

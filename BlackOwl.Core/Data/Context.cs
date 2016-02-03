@@ -13,11 +13,11 @@ namespace BlackOwl.Core.Data
 {
     public class Context : BlackCogs.Data.Context//IdentityDbContext<ApplicationUser>
     {
-        //public Context()
-        //    : base("DefaultConnection")
-        //{ 
-           
-        //}
+        public Context()
+           // : base("DefaultConnection")
+        {
+
+        }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //modelBuilder.Properties()
