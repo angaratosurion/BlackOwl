@@ -169,7 +169,6 @@
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\ProjectFiles.cs" />
     <Compile Include="Models\ProjectNews.cs" />
-    <Compile Include="Models\ProjectUser.cs" />
     <Compile Include="Models\UsersProjects.cs" />
     <Compile Include="ModuleInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

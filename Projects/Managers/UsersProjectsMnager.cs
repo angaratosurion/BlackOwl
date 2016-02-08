@@ -11,7 +11,7 @@ namespace Projects.Managers
 {
     public class UsersProjectsMnager
     {
-        ProjectsDbContext db = new ProjectsDbContext();
+        ApplicationDbContext db = new ApplicationDbContext();
         public void AddNewProjectToUser(ApplicationUser admin, Project project)
         {
             try

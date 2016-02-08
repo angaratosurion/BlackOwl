@@ -16,7 +16,7 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class ChangeLogsController : Controller
     {
-        private ProjectsDbContext db =Statics.db;
+        private ApplicationDbContext db =Statics.db;
         ChangeLogManager chlmngr = Statics.chgMngr;
 
         // GET: ChangeLogs

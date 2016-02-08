@@ -7,7 +7,7 @@ namespace Projects.Migrations
     using BlackOwl.Core.Data;
     using Projects.Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ProjectsDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<ApplicationDbContext>
     //internal sealed class Configuration : DbMigrationsConfiguration<Context>
     {
         public Configuration()
@@ -20,7 +20,7 @@ namespace Projects.Migrations
         
         
 
-        protected override void Seed(ProjectsDbContext context)
+        protected override void Seed(ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

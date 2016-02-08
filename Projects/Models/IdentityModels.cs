@@ -24,7 +24,7 @@ namespace Projects.Models
    
 
    // public class ApplicationDbContext :IdentityDbContext<ApplicationUser>
-  public class ProjectsDbContext : Context
+  public class ApplicationDbContext : Context
 
     {
 
@@ -39,27 +39,27 @@ namespace Projects.Models
                 .HasRequired(c => c.UploadedBy)
                 .WithMany()
                 .WillCascadeOnDelete(false);
-            modelBuilder.Entity<Projects.Models.FileReleases>()
-               .HasRequired(c => c.UploadedBy)
-              .WithRequiredDependent()
-               .WillCascadeOnDelete(false);
-            modelBuilder.Entity<Projects.Models.FileReleases>()
-              .HasRequired(c => c.UploadedBy)
-             .WithRequiredPrincipal()
-              .WillCascadeOnDelete(false);
-            modelBuilder.Entity<Projects.Models.FileReleases>()
-              .HasRequired(c => c.Project)
-             .WithRequiredPrincipal()
-              .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Projects.Models.FileReleases>()
+            //   .HasRequired(c => c.UploadedBy)
+            //  .WithRequiredDependent()
+            //   .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Projects.Models.FileReleases>()
+            //  .HasRequired(c => c.UploadedBy)
+            // .WithRequiredPrincipal()
+            //  .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Projects.Models.FileReleases>()
+            //  .HasRequired(c => c.Project)
+            // .WithRequiredPrincipal()
+            //  .WillCascadeOnDelete(false);
             modelBuilder.Entity<Project>()
-                .HasRequired(c => c.Releases)
+               .HasOptional(c => c.Releases)
                 .WithMany()
                 .WillCascadeOnDelete(false);
             //modelBuilder.Entity<ProjectFiles>()
-            modelBuilder.Entity<Project>()
-               .HasRequired(c => c.Releases)
-               .WithMany()
-               .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Project>()
+            //   .HasRequired(c => c.Releases)
+            //   .WithMany()
+            //   .WillCascadeOnDelete(false);
 
             //    .HasRequired(c => c.Release)
             //    .WithRequiredDependent()
@@ -76,24 +76,23 @@ namespace Projects.Models
             .HasRequired(f => f.Administrator)
             .WithMany()
             .WillCascadeOnDelete(false);
-              
+
             modelBuilder.Entity<UsersProjects>()
-                .HasKey(u =>new  { u.UserId, u.ProjectsId});
+                .HasKey(u => new { u.UserId, u.ProjectsId });
 
-            modelBuilder.Entity<ProjectUser>()
-                .ToTable("AspNetUsers");
-
-
+            //modelBuilder.Entity<ProjectUser>()
+            //    .ToTable("AspNetUsers");
+            
             this.Configuration.ValidateOnSaveEnabled = false;
 
-
+            
 
 
 
         }
-        public static  ProjectsDbContext Create()
+        public static  ApplicationDbContext Create()
         {
-            return new ProjectsDbContext();
+            return new ApplicationDbContext();
         }
 
         public System.Data.Entity.DbSet<Project> Projects { get; set; }
@@ -103,7 +102,7 @@ namespace Projects.Models
         public DbSet<ChangeLog> ChangeLogs { get; set; }
         public DbSet<Bugs> Bugs { get; set; }
         public DbSet<UsersProjects> UsersProjects { get; set; }
-        public DbSet<ProjectUser> ProjectUsers { get; set; }
+        //public DbSet<ProjectUser> ProjectUsers { get; set; }
 
 
         //public System.Data.Entity.DbSet<BlackOwl.Core.Data.Models.Plugin> Plugins { get; set; }

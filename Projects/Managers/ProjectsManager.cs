@@ -16,7 +16,7 @@ namespace Projects.Managers
 {
     public class ProjectsManager
     {
-         private ProjectsDbContext db =Statics.db;
+         private ApplicationDbContext db =Statics.db;
         ProjectUserManager usrmng = Statics.usrmng;
         MultiPlex.Core.Managers.WikiManager wkmngr = new MultiPlex.Core.Managers.WikiManager();
         PluginManager plugmanger = Statics.plugmanger;
@@ -47,14 +47,15 @@ namespace Projects.Managers
         {
             try
             {
+                if (usrmng == null)
+                {
+                    usrmng = new ProjectUserManager();
+                }
 
                 if (project != null && CommonTools.isEmpty(user) == false
-                  )// && usrmng.UserExists(user) == true)
+                   && usrmng.UserExists(user) == true)
                 {
-                    if (usrmng == null)
-                    {
-                        usrmng = new ProjectUserManager();
-                    }
+                   
                     ApplicationUser admin = usrmng.GetUser(user);
                     if (admin != null)
                     {
@@ -67,19 +68,23 @@ namespace Projects.Managers
                         //wk.Moderators = new List<ApplicationUser>();
                         //wk.Moderators.Add(admin);
                         //wkmngr.CreateWiki(wk);
+                     
                         project.Admininstrator = admin;
+                        project.AdmininstratorId = admin.Id;
                         project.WikiName = project.Name;
                        project.News = new List<ProjectNews>();
-                        //project.Releases = new List<FileReleases>();
-                        //project.Members = new List<ApplicationUser>();
+                        //List<FileReleases> filelst= new List<FileReleases>();
+                        //project.Releases = filelst;
+                        project.Members = new List<ApplicationUser>();
                         if (db == null)
                         {
-                            db = new ProjectsDbContext();
+                            db = new ApplicationDbContext();
                         }
                         //ProjectUser projusr = new ProjectUser();
-                      
+
                         //project.Admininstrator = admin;
-                        //db.Configuration.ValidateOnSaveEnabled = false;
+                        //  db.Configuration.ValidateOnSaveEnabled = false;
+                       // db.Configuration.LazyLoadingEnabled = true;
                         //Statics.usersprojmngr.AddNewProjectToUser(admin, project);
                         db.Projects.Add(project);
                       

@@ -16,7 +16,7 @@ namespace Projects.Controllers
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class FileReleasesController : Controller
     {
-        private ProjectsDbContext db =Statics.db;
+        private ApplicationDbContext db =Statics.db;
         private ReleasesManager relmngr = Statics.relmngr;
 
         // GET: FileReleases

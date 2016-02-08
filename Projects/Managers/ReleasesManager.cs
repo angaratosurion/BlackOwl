@@ -10,7 +10,7 @@ namespace Projects.Managers
 {
     public class ReleasesManager
     {
-         private ProjectsDbContext db =Statics.db;
+         private ApplicationDbContext db =Statics.db;
         ProjectFileManager projfilmngr = Statics.projfilmngr;
         public  void CreateNew (FileReleases release)
         {

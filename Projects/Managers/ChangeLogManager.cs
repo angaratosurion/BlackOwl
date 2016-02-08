@@ -10,7 +10,7 @@ namespace Projects.Managers
 {
     public class ChangeLogManager
     {
-        private   ProjectsDbContext db =Statics.db;
+        private   ApplicationDbContext db =Statics.db;
         public List<ChangeLog> GetAllChangeLog()
         {
             try

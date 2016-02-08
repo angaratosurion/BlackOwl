@@ -13,7 +13,7 @@ namespace Projects.Controllers
 {
     public class BugsController : Controller
     {
-        private ProjectsDbContext db =Statics.db;
+        private ApplicationDbContext db =Statics.db;
         BugManager bugmngr = Statics.bugmngr;
         // GET: Bugs
         public ActionResult Index(int? projectid)

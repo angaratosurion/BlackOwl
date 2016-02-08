@@ -11,7 +11,7 @@ namespace Projects
 {
     public   class Statics
     {
-        public static ProjectsDbContext db = new ProjectsDbContext();
+        public static ApplicationDbContext db = new ApplicationDbContext();
        public static FileManager FileManager = new FileManager();
         public static PluginManager plugmanger= new PluginManager();
         #region Manager of Projects

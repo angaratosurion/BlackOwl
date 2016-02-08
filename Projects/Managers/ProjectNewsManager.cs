@@ -13,7 +13,7 @@ namespace Projects.Managers
 {
     public class ProjectNewsManager
     {
-        private  ProjectsDbContext db =Statics.db;
+        private  ApplicationDbContext db =Statics.db;
 
         public List<ProjectNews> List()
         {

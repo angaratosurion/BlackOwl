@@ -14,7 +14,7 @@ namespace Projects.Managers
     
     public class ProjectFileManager
     {
-         private ProjectsDbContext db =Statics.db;
+         private ApplicationDbContext db =Statics.db;
         FileManager FileManager = Statics.FileManager;// = new FileManager();
         PluginManager plugmanger=Statics.plugmanger;
         ReleasesManager relmngr = Statics.relmngr;
