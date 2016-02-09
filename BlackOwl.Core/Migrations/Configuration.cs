@@ -9,7 +9,7 @@ namespace BlackOwl.Core.Migrations
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 
-    public class Configuration : DbMigrationsConfiguration<BlackOwl.Core.Data.Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<BlackOwl.Core.Data.Context>
     {
         public Configuration()
         {

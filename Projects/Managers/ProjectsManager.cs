@@ -68,9 +68,16 @@ namespace Projects.Managers
                         //wk.Moderators = new List<ApplicationUser>();
                         //wk.Moderators.Add(admin);
                         //wkmngr.CreateWiki(wk);
-                     
-                        project.Admininstrator = admin;
-                        project.AdmininstratorId = admin.Id;
+
+                        //project.Admininstrator = admin;
+                        //project.AdmininstratorId = admin.Id;
+                        ApplicationUser owner = new ApplicationUser();
+
+                        //owner.Claims = admin.Claims;
+                        owner = admin.Clone();
+
+
+
                         project.WikiName = project.Name;
                        project.News = new List<ProjectNews>();
                         //List<FileReleases> filelst= new List<FileReleases>();
@@ -81,7 +88,8 @@ namespace Projects.Managers
                             db = new ApplicationDbContext();
                         }
                         //ProjectUser projusr = new ProjectUser();
-
+                        project.Admininstrator = owner;
+                        project.AdmininstratorId = owner.Id;
                         //project.Admininstrator = admin;
                         //  db.Configuration.ValidateOnSaveEnabled = false;
                        // db.Configuration.LazyLoadingEnabled = true;
