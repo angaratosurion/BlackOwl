@@ -21,10 +21,10 @@ namespace Projects.Models
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
-        
-        public Project Project { get; set; }
+
+        public virtual  Project Project { get; set; }
       [Required]
-        public FileReleases Releases { get; set; }
+        public virtual FileReleases Releases { get; set; }
       
 
     }

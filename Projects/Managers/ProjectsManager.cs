@@ -88,10 +88,10 @@ namespace Projects.Managers
                             db = new ApplicationDbContext();
                         }
                         //ProjectUser projusr = new ProjectUser();
-                        project.Admininstrator = owner;
-                        project.AdmininstratorId = owner.Id;
-                        //project.Admininstrator = admin;
-                        //  db.Configuration.ValidateOnSaveEnabled = false;
+                     //   project.Admininstrator = owner;
+                        project.AdmininstratorId = admin.Id;
+                       project.Admininstrator = admin;
+                       //   db.Configuration.ValidateOnSaveEnabled = false;
                        // db.Configuration.LazyLoadingEnabled = true;
                         //Statics.usersprojmngr.AddNewProjectToUser(admin, project);
                         db.Projects.Add(project);

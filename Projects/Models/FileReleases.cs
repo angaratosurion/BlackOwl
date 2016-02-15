@@ -25,14 +25,14 @@ namespace Projects.Models
         public Byte[] RowVersion { get; set; }
 
         [Required]
-        public List<ProjectFiles> Files { get; set; }
+        public virtual List<ProjectFiles> Files { get; set; }
         [Required]
-        public Project Project { get; set; }
-       
-       
-        public ApplicationUser UploadedBy { get; set; }
-      //
-       // [Required]
-        public ChangeLog ChangeLog { get; set; }
+        public virtual Project Project { get; set; }
+
+
+        public virtual  ApplicationUser UploadedBy { get; set; }
+        //
+        // [Required]
+        public virtual ChangeLog ChangeLog { get; set; }
     }
 }

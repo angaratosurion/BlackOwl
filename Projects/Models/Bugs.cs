@@ -26,10 +26,10 @@ namespace Projects.Models
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
-         public ApplicationUser ReportedBy { get; set; }
+        public virtual ApplicationUser ReportedBy { get; set; }
 
-        public ApplicationUser EditedBy { get; set; }
+        public virtual  ApplicationUser EditedBy { get; set; }
         [Required]
-        public Project Project { get; set; }
+        public virtual Project Project { get; set; }
     }
 }

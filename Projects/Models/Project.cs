@@ -28,11 +28,11 @@ namespace Projects.Models
         [Required]
         
         public virtual ApplicationUser Admininstrator { get; set; }
-        public List<ApplicationUser> Members { get; set; }
+        public virtual List<ApplicationUser> Members { get; set; }
         public virtual List<ProjectNews> News { get; set; }
         public virtual List<FileReleases> Releases { get; set; }
-        public List<ChangeLog> ChangeLogs { get; set; }
-        public List<Bugs> Bugs { get; set; }
+        public virtual List<ChangeLog> ChangeLogs { get; set; }
+        public virtual List<Bugs> Bugs { get; set; }
 
       
      
