@@ -35,10 +35,10 @@ namespace Projects.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Projects.Models.FileReleases>()
-                .HasRequired(c => c.UploadedBy)
-                .WithMany()
-                .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Projects.Models.FileReleases>()
+            //    .HasRequired(c => c.UploadedBy)
+            //    .WithMany()
+            //    .WillCascadeOnDelete(false);
             //modelBuilder.Entity<Projects.Models.FileReleases>()
             //   .HasRequired(c => c.UploadedBy)
             //  .WithRequiredDependent()
@@ -72,19 +72,11 @@ namespace Projects.Models
             //  .HasRequired(c => c.Release)
             //  .WithOptional()
             //  .WillCascadeOnDelete(false);
-            modelBuilder.Entity<Wiki>()
-            .HasRequired(f => f.Administrator)
-            .WithMany()
-            .WillCascadeOnDelete(false);
+           
 
-            modelBuilder.Entity<UsersProjects>()
-                .HasKey(u => new { u.UserId, u.ProjectsId });
 
-            //modelBuilder.Entity<ProjectUser>()
-            //    .ToTable("AspNetUsers");
-            
-            this.Configuration.ValidateOnSaveEnabled = false;
 
+           
             
 
 
@@ -101,8 +93,9 @@ namespace Projects.Models
         public System.Data.Entity.DbSet<FileReleases> FileReleases { get; set; }
         public DbSet<ChangeLog> ChangeLogs { get; set; }
         public DbSet<Bugs> Bugs { get; set; }
-        public DbSet<UsersProjects> UsersProjects { get; set; }
-        //public DbSet<ProjectUser> ProjectUsers { get; set; }
+        public DbSet<ProjectMember> ProjectMembers { get; set; }
+
+        
 
 
         //public System.Data.Entity.DbSet<BlackOwl.Core.Data.Models.Plugin> Plugins { get; set; }

@@ -1,0 +1,3 @@
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projectswebver.csprojResolveAssemblyReference.cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb

@@ -9,6 +9,8 @@ using System.Web;
 using System.Web.Mvc;
 using Projects.Models;
 using Projects.Managers;
+using Projects.ViewModels;
+
 namespace Projects.Controllers
 {
 
@@ -25,8 +27,15 @@ namespace Projects.Controllers
             //var fileReleases = db.FileReleases.Include(f => f.ChangeLog);
 
             var fileReleases = this.relmngr.GetAllReleasesByProjectId(projectid);
+            List<ViewFileReleases> vrels = new List<ViewFileReleases>();
+            foreach( var rel in fileReleases)
+            {
+                ViewFileReleases vrel = new ViewFileReleases();
+                vrel.ImportFromModel(rel);
+                vrels.Add(vrel);
+            }
             
-            return View(fileReleases.ToList());
+            return View(vrels);
         }
 
         // GET: FileReleases/Details/5
@@ -41,7 +50,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(fileReleases);
+            ViewFileReleases vrel = new ViewFileReleases();
+            vrel.ImportFromModel(fileReleases);
+            return View(vrel);
         }
 
         // GET: FileReleases/Create
@@ -57,17 +68,18 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Tittle,Version,Published,content")] FileReleases fileReleases)
+        public ActionResult Create([Bind(Include = "Id,Tittle,Version,Published,content")] ViewFileReleases vfileReleases)
         {
             if (ModelState.IsValid)
             {
+                FileReleases fileReleases = vfileReleases.ExportTomodel();
                 this.relmngr.CreateNew(fileReleases);
                
                 return RedirectToAction("Index");
             }
 
-            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", fileReleases.Id);
-            return View(fileReleases);
+            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", vfileReleases.Id);
+            return View(vfileReleases);
         }
 
         // GET: FileReleases/Edit/5
@@ -83,8 +95,10 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", fileReleases.Id);
-            return View(fileReleases);
+            ViewFileReleases vrel = new ViewFileReleases();
+            vrel.ImportFromModel(fileReleases);
+            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", vrel.Id);
+            return View(vrel);
         }
 
         // POST: FileReleases/Edit/5
@@ -92,15 +106,16 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Tittle,Version,Published,content,RowVersion")] FileReleases fileReleases)
+        public ActionResult Edit([Bind(Include = "Id,Tittle,Version,Published,content,RowVersion")] ViewFileReleases vfileReleases)
         {
             if (ModelState.IsValid)
             {
+                FileReleases fileReleases = vfileReleases.ExportTomodel();
                 this.relmngr.Edit(fileReleases);
                 return RedirectToAction("Index");
             }
-            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", fileReleases.Id);
-            return View(fileReleases);
+            ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title", vfileReleases.Id);
+            return View(vfileReleases);
         }
 
         // GET: FileReleases/Delete/5
@@ -116,7 +131,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(fileReleases);
+            ViewFileReleases vrel = new ViewFileReleases();
+            vrel.ImportFromModel(fileReleases);
+            return View(vrel);
         }
 
         // POST: FileReleases/Delete/5

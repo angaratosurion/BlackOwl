@@ -22,13 +22,13 @@ namespace Projects.Models
         [DataType(DataType.MultilineText)]
         public string Description { get; set; }
         public string WikiName { get; set; }
-        public string AdmininstratorId { get; set; }
+       
         [Timestamp]
         public Byte []  RowVersion { get; set; }
         [Required]
         
-        public virtual ApplicationUser Admininstrator { get; set; }
-        public virtual List<ApplicationUser> Members { get; set; }
+        public string Admininstrator { get; set; }
+        public virtual List<ProjectMember> Members { get; set; }
         public virtual List<ProjectNews> News { get; set; }
         public virtual List<FileReleases> Releases { get; set; }
         public virtual List<ChangeLog> ChangeLogs { get; set; }

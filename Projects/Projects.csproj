@@ -168,12 +168,15 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Project.cs" />
     <Compile Include="Models\ProjectFiles.cs" />
+    <Compile Include="Models\ProjectMember.cs" />
     <Compile Include="Models\ProjectNews.cs" />
-    <Compile Include="Models\UsersProjects.cs" />
     <Compile Include="ModuleInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Statics.cs" />
     <Compile Include="Verbs\ProjectVerb.cs" />
+    <Compile Include="ViewModels\ViewBugs.cs" />
+    <Compile Include="ViewModels\ViewFileReleases.cs" />
+    <Compile Include="ViewModels\ViewProject.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -300,6 +303,7 @@
       <Name>BlackOwl.Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

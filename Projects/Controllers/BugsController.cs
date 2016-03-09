@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Projects.Managers;
 using Projects.Models;
+using Projects.ViewModels;
 
 namespace Projects.Controllers
 {
@@ -20,10 +21,18 @@ namespace Projects.Controllers
         {
             try
             {
+                var bugs = bugmngr.BugsByProjectId(projectid);
+                List<ViewBugs> vbs = new List<ViewBugs>();
+                foreach( var b in bugs)
+                {
+                    ViewBugs vb = new ViewBugs();
+                    vb.ImportFromModel(b);
+                    vbs.Add(vb);
+                }
 
-           
 
-            return View(bugmngr.BugsByProjectId(projectid));
+
+            return View(vbs);
         }
              catch (Exception)
             {
@@ -44,7 +53,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(bugs);
+            ViewBugs vb = new ViewBugs();
+            vb.ImportFromModel(bugs);
+            return View(vb);
         }
 
         // GET: Bugs/Create
@@ -58,15 +69,16 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt")] Bugs bugs)
+        public ActionResult Create([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt")] ViewBugs vbugs)
         {
             if (ModelState.IsValid)
             {
+                Bugs bugs = vbugs.ExportTomodel();
                 this.bugmngr.Create(bugs);
                 return RedirectToAction("Index");
             }
 
-            return View(bugs);
+            return View(vbugs);
         }
 
         // GET: Bugs/Edit/5
@@ -81,7 +93,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(bugs);
+            ViewBugs vb = new ViewBugs();
+            vb.ImportFromModel(bugs);
+            return View(vb);
         }
 
         // POST: Bugs/Edit/5
@@ -89,14 +103,15 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt,RowVersion")] Bugs bugs)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt,RowVersion")] ViewBugs vbugs)
         {
             if (ModelState.IsValid)
             {
+                Bugs bugs = vbugs.ExportTomodel();
                 this.bugmngr.Edit(bugs);
                 return RedirectToAction("Index");
             }
-            return View(bugs);
+            return View(vbugs);
         }
 
         // GET: Bugs/Delete/5
@@ -111,7 +126,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(bugs);
+            ViewBugs vbugs = new ViewBugs();
+            vbugs.ImportFromModel(bugs);
+            return View(vbugs);
         }
 
         // POST: Bugs/Delete/5

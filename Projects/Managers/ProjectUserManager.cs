@@ -26,7 +26,7 @@ namespace Projects.Managers
                         IdentityRole role = this.GetRole(AdminRoles);
                         if (role != null)
                         {
-                            if (role.Users.First(x => x.UserId == user.Id) != null && wk.Admininstrator.UserName == user.UserName)
+                            if (role.Users.First(x => x.UserId == user.Id) != null && wk.Admininstrator== user.Id)
                             {
                                 ap = true;
                             }
@@ -35,7 +35,7 @@ namespace Projects.Managers
                     }
                     else
                     {
-                        if (wk.Admininstrator == user)
+                        if (wk.Admininstrator == user.Id)
                         {
                             ap = true;
                         }

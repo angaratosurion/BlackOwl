@@ -12,21 +12,21 @@ namespace Projects.Managers
     public class UsersProjectsMnager
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        public void AddNewProjectToUser(ApplicationUser admin, Project project)
-        {
-            try
-            {
-                 if (admin != null && project != null)
-                {
-                    UsersProjects userporj = new UsersProjects();
-                    userporj.UserId = admin.Id;
-                    userporj.ProjectsId = project.Id;
-                    db.UsersProjects.Add(userporj);
-                    db.SaveChanges();
+        //public void AddNewProjectToUser(ApplicationUser admin, Project project)
+        //{
+        //    try
+        //    {
+        //         if (admin != null && project != null)
+        //        {
+        //            UsersProjects userporj = new UsersProjects();
+        //            userporj.UserId = admin.Id;
+        //            userporj.ProjectsId = project.Id;
+        //            db.UsersProjects.Add(userporj);
+        //            db.SaveChanges();
                     
-                }
-            }
-            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
-        }
+        //        }
+        //    }
+        //    catch (Exception ex) { CommonTools.ErrorReporting(ex); }
+        //}
     }
 }

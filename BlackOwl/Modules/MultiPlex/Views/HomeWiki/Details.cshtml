@@ -1,4 +1,4 @@
-﻿@model MultiPlex.Core.Data.Models.Wiki
+﻿@model  MultiPlex.Core.Data.ViewModels.ViewWiki
 @{
     ViewBag.Title = "Details";
 }
@@ -29,28 +29,29 @@
                         <dd>
                             @Html.DisplayFor(model => model.Description)
                         </dd>
-                        @*<dt>
-                            @Html.DisplayNameFor(model => model.Admininstrator)
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Administrator)
                         </dt>
 
                         <dd>
-                            @Html.DisplayFor(model => model.Admininstrator)
-                        </dd>*@
+                           @Html.ActionLink(Model.Administrator.UserName, "Details", "WikiUser", 
+                          new { username = Model.Administrator.UserName }, htmlAttributes: null) 
+                        </dd>
                         <dd>
                             @Html.DisplayNameFor(model => model.Moderators)
                         </dd>
-                        @*<dt>
-                            <ul class="nav navbar-nav">
+                        <dt>
+                            <ul >
                                 @{
-                                    var mods = Model.Moderators;
+                                    var mods = Model.Moderators.ToList();
                                     foreach (var mod in mods)
                                     {
-                                        <li> @Html.DisplayForModel(mod.UserName.ToString());  </li>
+                                        <li> @Html.ActionLink(mod.UserName,"Details", "WikiUser", new { username = mod.UserName },htmlAttributes:null)  </li>
                                     }
 
-                                }
+                                        }
                             </ul>
-                        </dt>*@
+                        </dt>
                    
                 </td>
                 <td>             
@@ -84,9 +85,31 @@
     </tbody>
     </table>
 </div>
-<p>
+<p><div id="Commandbar">
     @Html.ActionLink("Edit", "EditWiki", new { wikiname = Model.Name }) |
     @Html.ActionLink("Request Moderator Invitation", "RequestModeratorInvite", "WikiManager", new { wikiname = Model.Name },
     htmlAttributes:null) |
     @Html.ActionLink("Back to List", "Index")
+    </div>
+    <div id="nocattitles">
+        @{ 
+            if ( Model.Titles != null && Model.Titles.Count>0)
+            {
+                var nocattitles = Model.Titles.FindAll(x => x.Categories.Count == 0).ToList();
+                if ( nocattitles!=null && nocattitles.Count>0)
+                {
+                      <ul class="nav navbar-nav">
+
+                          @foreach (var ncattitle in nocattitles)
+                          {
+                            @Html.ActionLink(ncattitle.Name, "ViewContent","WikiContent",
+               new { wikiname = ncattitle.Wiki.Name, id = ncattitle.TitleId, slug = ncattitle.Slug },htmlAttributes:null)
+                          }
+                          </ul>
+                }
+
+            }
+        }
+    </div>
+
 </p>

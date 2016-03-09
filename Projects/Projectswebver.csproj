@@ -201,18 +201,11 @@
     <Compile Include="Controllers\ProjectNewsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Controllers\FileReleasesController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
     <Compile Include="Managers\BugManager.cs" />
     <Compile Include="Managers\ChangeLogManager.cs" />
     <Compile Include="Managers\ProjectFileManager.cs" />
     <Compile Include="Managers\ProjectNewsManager.cs" />
     <Compile Include="Managers\ReleasesManager.cs" />
-    <Compile Include="Migrations\201507291940039_initial.cs" />
-    <Compile Include="Migrations\201507291940039_initial.Designer.cs">
-      <DependentUpon>201507291940039_initial.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bugs.cs" />
     <Compile Include="Models\ChangeLog.cs" />
@@ -222,16 +215,13 @@
     <Compile Include="Models\ProjectFiles.cs" />
     <Compile Include="Models\ProjectNews.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="copytomodules.bat">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -249,7 +239,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
-    <Content Include="Icon.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
@@ -307,19 +296,30 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages.config" />
-    <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\..\BlackCogs\BlackCogs\BlackCogs.csproj">
+      <Project>{b17ede4e-7c83-40d7-be1b-5b54598f0d30}</Project>
+      <Name>BlackCogs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MultiPlex\MultiPlex.Core\MultiPlex.Core.csproj">
+      <Project>{03da9457-2f29-4a8a-b5ce-971f68dd8759}</Project>
+      <Name>MultiPlex.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\MultiPlex\MultiPlex\MultiPlex.csproj">
+      <Project>{3ea6cbe4-2523-4bb3-8926-9a1746774741}</Project>
+      <Name>MultiPlex</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BlackOwl.Core\BlackOwl.Core.csproj">
       <Project>{0a876a7b-02f4-4152-8627-a222e78a73b1}</Project>
       <Name>BlackOwl.Core</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201507291940039_initial.resx">
-      <DependentUpon>201507291940039_initial.cs</DependentUpon>
-    </EmbeddedResource>
+    <ProjectReference Include="..\BlackOwl\BlackOwl.csproj">
+      <Project>{6ce16b16-7f21-47ba-aa15-0e7824a33494}</Project>
+      <Name>BlackOwl</Name>
+    </ProjectReference>
+    <ProjectReference Include="Projects.csproj">
+      <Project>{3785c42b-b1a9-4c54-992d-23d4e78085ae}</Project>
+      <Name>Projects</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

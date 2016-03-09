@@ -23,19 +23,32 @@ namespace BlackOwl.Core.Data
             //modelBuilder.Properties()
             //        .Where(p => p.Name == "id")
             //        .Configure(p => p.IsKey()); 
-            modelBuilder.Entity<WikiContent>()
-                .HasRequired(s => s.WrittenBy)
-                .WithMany().WillCascadeOnDelete(false);
-            modelBuilder.Entity<WikiTitle>()
-                .HasRequired(t => t.WrittenBy)
-                .WithMany().WillCascadeOnDelete(false);
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Properties<DateTime>()
+                  .Configure(c => c.HasColumnType("datetime2"));
 
 
+            //modelBuilder.Entity<WikiContent>()
+            //    .HasRequired(s => s.WrittenBy)
+            //    .WithMany().WillCascadeOnDelete(false);
+            //modelBuilder.Entity<WikiTitle>()
+            //    .HasRequired(t => t.WrittenBy)
+            //    .WithMany().WillCascadeOnDelete(false);
 
+
+            //modelBuilder.Properties()
+            //    .Where(p => p.Name == "Id")
+            //    .Configure(p => p.HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity));
+            //modelBuilder.Properties()
+            //    .Where(p => p.Name == "RowVersion")
+            //    .Configure(p => p.IsRowVersion());
 
             modelBuilder.Entity<WikiTitle>()
                 .HasRequired(t => t.Wiki)
                 .WithMany().WillCascadeOnDelete(false);
+            modelBuilder.Entity<WikiTitle>()
+                .HasKey(p => p.TitleId);
+
 
             modelBuilder.Entity<WikiFile>()
                 .HasRequired(f => f.Wiki)
@@ -45,10 +58,6 @@ namespace BlackOwl.Core.Data
                .HasRequired(f => f.Wiki)
                .WithMany()
                .WillCascadeOnDelete(false);
-            modelBuilder.Entity<Wiki>()
-              .HasRequired(f => f.Administrator)
-              .WithMany()
-              .WillCascadeOnDelete(false);
 
 
 

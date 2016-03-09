@@ -61,13 +61,16 @@ namespace Projects.Managers
                     {
 
 
-                        //Wiki wk = new Wiki();
-                        //wk.Name = project.Name;
-                        //wk.WikiTitle = project.Name;
-                        //wk.Administrator = admin;
-                        //wk.Moderators = new List<ApplicationUser>();
-                        //wk.Moderators.Add(admin);
-                        //wkmngr.CreateWiki(wk);
+                        Wiki wk = new Wiki();
+                        wk.Name = project.Name;
+                        wk.WikiTitle = project.Name;
+                        wk.Administrator = admin.Id;
+                        wk.Moderators = new List<WikiMods>();
+                        WikiMods wkm = new WikiMods();
+                        wkm.Moderator = admin.Id;
+                        wkm.Wiki = wk;
+                        wk.Moderators.Add(wkm);
+                        wkmngr.CreateWiki(wk,user);
 
                         //project.Admininstrator = admin;
                         //project.AdmininstratorId = admin.Id;
@@ -82,15 +85,15 @@ namespace Projects.Managers
                        project.News = new List<ProjectNews>();
                         //List<FileReleases> filelst= new List<FileReleases>();
                         //project.Releases = filelst;
-                        project.Members = new List<ApplicationUser>();
+                        project.Members = new List<ProjectMember>();
                         if (db == null)
                         {
                             db = new ApplicationDbContext();
                         }
                         //ProjectUser projusr = new ProjectUser();
-                     //   project.Admininstrator = owner;
-                        project.AdmininstratorId = admin.Id;
-                       project.Admininstrator = admin;
+                        //   project.Admininstrator = owner;
+                       
+                       project.Admininstrator = admin.Id;
                        //   db.Configuration.ValidateOnSaveEnabled = false;
                        // db.Configuration.LazyLoadingEnabled = true;
                         //Statics.usersprojmngr.AddNewProjectToUser(admin, project);
@@ -98,7 +101,8 @@ namespace Projects.Managers
                       
                         
                         db.SaveChanges();
-                        string path = Path.Combine(plugmanger.GetPluginFilesRelativeDir("Projects"), project.Name);
+                        string plugrelpath= plugmanger.GetPluginFilesRelativeDir("Projects");
+                        string path = Path.Combine(plugrelpath, project.Name);
                         FileManager.CreateDirectory(path);
 
                     }

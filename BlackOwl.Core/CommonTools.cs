@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BlackCogs.Managers;
 
 namespace BlackOwl.Core
 {
    public class CommonTools:BlackCogs.CommonTools
     {
-       public Boolean isEmpty(string str)
+        public static BlackCogsUserManager usrmng = new BlackCogsUserManager();
+        public static  Boolean isEmpty(string str)
        {
            try
            {

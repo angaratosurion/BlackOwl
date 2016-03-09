@@ -10,6 +10,7 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Projects.Managers;
 using Projects.Models;
+using Projects.ViewModels;
 
 namespace Projects.Controllers
 {
@@ -23,7 +24,15 @@ namespace Projects.Controllers
         // GET: Projects
         public ActionResult Index()
         {
-            return View(mngr.List());
+            var prolst = mngr.List();
+            List<ViewProject> vproj = new List<ViewProject>();
+            foreach( var p in prolst)
+            {
+                ViewProject vp = new ViewProject();
+                vp.ImportFromModel(p);
+                vproj.Add(vp);
+            }
+            return View(vproj);
         }
 
         // GET: Projects/Details/5
@@ -38,7 +47,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(project);
+            ViewProject vproject = new ViewProject();
+            vproject.ImportFromModel(project);
+            return View(vproject);
         }
 
         // GET: Projects/Create
@@ -54,16 +65,16 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Description")] Project project)
+        public ActionResult Create([Bind(Include = "Id,Name,Description")] ViewProject vproject)
         {
             //if (ModelState.IsValid)
             {  //project.Admininstrator = Statics.usrmng.GetUser(this.User.Identity.Name);
-
+                Project project = vproject.ExportToModel();
                 this.mngr.Create(project, this.User.Identity.Name);
-                RouteValueDictionary vals = new RouteValueDictionary();
-                vals.Add("newwikiname", project.Name);
-               return RedirectToAction("Create", "HomeWiki",vals);
-                //return RedirectToAction("Index");
+               // RouteValueDictionary vals = new RouteValueDictionary();
+               // vals.Add("newwikiname", project.Name);
+               //return RedirectToAction("Create", "HomeWiki",vals);
+                return RedirectToAction("Index");
             }
 
             //return View(project);
@@ -82,7 +93,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(project);
+            ViewProject vproject = new ViewProject();
+            vproject.ImportFromModel(project);
+            return View(vproject);
         }
 
         // POST: Projects/Edit/5
@@ -90,14 +103,15 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description,RowVersion")] Project project)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,RowVersion")] ViewProject vproject)
         {
             if (ModelState.IsValid)
             {
+                Project project = vproject.ExportToModel();
                 this.mngr.Edit(project);
                 return RedirectToAction("Index");
             }
-            return View(project);
+            return View(vproject);
         }
 
         // GET: Projects/Delete/5
@@ -113,7 +127,9 @@ namespace Projects.Controllers
             {
                 return HttpNotFound();
             }
-            return View(project);
+            ViewProject vproject = new ViewProject();
+            vproject.ImportFromModel(project);
+            return View(vproject);
         }
 
         // POST: Projects/Delete/5

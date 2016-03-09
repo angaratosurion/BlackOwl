@@ -1,4 +1,4 @@
-﻿@model Projects.Models.Project
+﻿@model Projects.ViewModels.ViewProject
 
 @{
     ViewBag.Title = "Details";
@@ -27,17 +27,20 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Wiki)
+            @Html.DisplayNameFor(model => model.WikiName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Wiki.Name)
+            @*@Html.DisplayFor(model => model.WikiName)*@
+             @Html.ActionLink(Model.WikiName, "Details", "HomeWiki", new {wikiname= Model.WikiName } ,htmlAttributes:null)
+
+            
         </dd>
 
         
 
         <dt>
-            @Html.DisplayNameFor(model => model.Admininstrato)
+            @Html.DisplayNameFor(model => model.Admininstrator)
         </dt>
 
         <dd>

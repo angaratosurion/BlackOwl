@@ -30,7 +30,7 @@ namespace Projects.Models
         public virtual Project Project { get; set; }
 
 
-        public virtual  ApplicationUser UploadedBy { get; set; }
+        public string UploadedBy { get; set; }
         //
         // [Required]
         public virtual ChangeLog ChangeLog { get; set; }
