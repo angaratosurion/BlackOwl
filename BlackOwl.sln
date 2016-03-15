@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiPlex.Core", "..\MultiP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiPlex", "..\MultiPlex\MultiPlex\MultiPlex.csproj", "{3EA6CBE4-2523-4BB3-8926-9A1746774741}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiPlex.Web", "..\MultiPlex\MultiPlex.Web\MultiPlex.Web.csproj", "{5CEECB04-F597-4AB0-847C-5452393CA1D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEECB04-F597-4AB0-847C-5452393CA1D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEECB04-F597-4AB0-847C-5452393CA1D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEECB04-F597-4AB0-847C-5452393CA1D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEECB04-F597-4AB0-847C-5452393CA1D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
