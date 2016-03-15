@@ -19,6 +19,14 @@
                 </button>
                 @Html.ActionLink(BlackOwl.Core.Bootstrapper.GetApplicationName("BlackOwl"), "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
+            <div id="header">
+                @if (IsSectionDefined("head"))
+                {
+                    @RenderSection("head");
+
+                }
+            </div>
+
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
