@@ -1,0 +1,82 @@
+2016/03/15 04:35:15.932: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:37:09.769: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterIgnoreRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:38:22.626: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterIgnoreRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:38:22.662: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterIgnoreRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:39:21.381: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterIgnoreRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:39:21.409: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ComponentModel.Composition.CompositionContractMismatchException: Cannot cast the underlying exported value of type 'BlackOwl.Core.Application.RouteConfig.RegisterIgnoreRoutes (ContractName="BlackCogs.Interfaces.IRouteRegistrar")' to type 'BlackCogs.Interfaces.IRouteRegistrar'.
+   at System.ComponentModel.Composition.ExportServices.CastExportedValue[T](ICompositionElement element, Object exportedValue)
+   at System.ComponentModel.Composition.ExportServices.GetCastedExportedValue[T](Export export)
+   at System.ComponentModel.Composition.ExportServices.<>c__DisplayClass11_0`2.<CreateStronglyTypedLazyOfTM>b__1()
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.LazyInitValue()
+   at System.Lazy`1.get_Value()
+   at BlackCogs.Bootstrapper.<>c.<RegisterRoutes>b__13_1(Lazy`2 lazy) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 222
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 220
+2016/03/15 04:40:46.502: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at MultiPlex.Core.Application.RouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\MultiPlex\MultiPlex.Core\Application\App_Start\RouteConfig.cs:line 19
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225

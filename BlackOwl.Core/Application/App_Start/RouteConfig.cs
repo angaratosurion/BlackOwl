@@ -1,18 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
+using BlackCogs.Interfaces;
 
 namespace BlackOwl.Core.Application
 {
-    public class RouteConfig:BlackCogs.Application.RouteConfig
+    [Export(typeof(IRouteRegistrar)), ExportMetadata("Order", 100)]
+    public class RouteConfig: BlackCogs.Application.RouteConfig
     {
-        public static void RegisterRoutes(RouteCollection routes)
+       
+        public new  void RegisterIgnoreRoutes(RouteCollection routes)
         {
+           
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+        }
+        public new void RegisterRoutes(RouteCollection routes)
+        {
 
+            base.RegisterRoutes(routes);
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
