@@ -34,9 +34,27 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @{
                         var verbs = BlackCogs.Bootstrapper.GetVerbsForCategory("Navigation");
+                        Microsoft.AspNet.Identity.EntityFramework.IdentityRole rolusr = null;
+
+                        if (User != null && User.Identity != null & User.Identity.Name != "")
+                        {
+                            var rols = BlackOwl.Core.CommonTools.usrmng.GetRolesOfUser(User.Identity.Name);
+                            if (rols != null)
+                            {
+                                rolusr = rols.FirstOrDefault(x => x.Name == "Administrators");
+                            }
+
+                        }
                         foreach (var verb in verbs)
                         {
-                            <li>< @Html.ActionLink(verb.Name, verb.Action, verb.Controller)</li>
+                            if (verb.isAdminPalnel == true && rolusr != null)
+                            {
+                                <li> @Html.ActionLink(verb.Name, verb.Action, verb.Controller)</li>
+                            }
+                            else if (verb.isAdminPalnel == false)
+                            {
+                                <li> @Html.ActionLink(verb.Name, verb.Action, verb.Controller)</li>
+                            }
                         }
 
 

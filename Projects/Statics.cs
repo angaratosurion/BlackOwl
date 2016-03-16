@@ -22,7 +22,7 @@ namespace Projects
         public static ChangeLogManager chgMngr = new ChangeLogManager();
         public static ProjectNewsManager newMngr = new ProjectNewsManager();
         public static ProjectUserManager usrmng = new ProjectUserManager();
-        public static UsersProjectsMnager usersprojmngr = new UsersProjectsMnager();
+        //public static UsersProjectsMnager usersprojmngr = new UsersProjectsMnager();
         #endregion
     }
 }

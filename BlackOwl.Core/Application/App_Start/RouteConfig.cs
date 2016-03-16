@@ -9,19 +9,19 @@ using BlackCogs.Interfaces;
 
 namespace BlackOwl.Core.Application
 {
-    [Export(typeof(IRouteRegistrar)), ExportMetadata("Order", 100)]
-    public class RouteConfig: BlackCogs.Application.RouteConfig
+    [Export(typeof(IRouteRegistrar)), ExportMetadata("Order", 99)]
+    public class RouteConfig: IRouteRegistrar//BlackCogs.Application.RouteConfig
     {
        
-        public new  void RegisterIgnoreRoutes(RouteCollection routes)
+        public  void RegisterIgnoreRoutes(RouteCollection routes)
         {
            
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
         }
-        public new void RegisterRoutes(RouteCollection routes)
+        public void RegisterRoutes(RouteCollection routes)
         {
 
-            base.RegisterRoutes(routes);
+            //base.RegisterRoutes(routes);
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

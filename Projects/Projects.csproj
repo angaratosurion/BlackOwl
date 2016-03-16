@@ -160,7 +160,6 @@
     <Compile Include="Managers\ProjectNewsManager.cs" />
     <Compile Include="Managers\ProjectUserManager.cs" />
     <Compile Include="Managers\ReleasesManager.cs" />
-    <Compile Include="Managers\UsersProjectsMnager.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Bugs.cs" />
     <Compile Include="Models\ChangeLog.cs" />

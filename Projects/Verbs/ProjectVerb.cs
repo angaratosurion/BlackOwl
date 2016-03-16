@@ -35,6 +35,14 @@ namespace Projects.Verbs
             }
         }
 
+        public bool isAdminPalnel
+        {
+            get
+            {
+                return false;
+            }
+        }
+
         public string Name
         {
             get
