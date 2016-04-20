@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 using BlackCogs.Interfaces;
 using BlackOwl.Core.Application;
 
-namespace Projects.Verbs
+namespace Projects .Verbs
 {
-    [Export(typeof(IActionVerb)), ExportMetadata("Category", "Navigation")]
-    public class ProjectVerb : IActionVerb
+    [Export(typeof(IActionVerb)), ExportMetadata("Category", "AdminNavigation")]
+    public class AdminNewsVerb : IActionVerb
     {
         public string Action
         {
@@ -24,7 +24,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Projects";
+                return "ProjectsNews";
             }
         }
 
@@ -32,7 +32,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Handles Modules";
+                return "Here you Administrage the Existing Categories on the Projects ";
             }
         }
 
@@ -40,17 +40,10 @@ namespace Projects.Verbs
         {
             get
             {
-                return false;
+                return true;
             }
         }
 
-        public string Name
-        {
-            get
-            {
-                return "Projects";
-            }
-        }
         public string Moduledescription
         {
             get
@@ -66,6 +59,14 @@ namespace Projects.Verbs
             {
                 Info inf = new Info();
                 return inf.Name;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return "Categories Administration";
             }
         }
     }

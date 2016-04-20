@@ -150,6 +150,7 @@
     <Compile Include="Controllers\BugsController.cs" />
     <Compile Include="Controllers\ChangeLogsController.cs" />
     <Compile Include="Controllers\FileReleasesController.cs" />
+    <Compile Include="Controllers\ProjectAdminSiteController.cs" />
     <Compile Include="Controllers\ProjectFilesController.cs" />
     <Compile Include="Controllers\ProjectNewsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
@@ -172,6 +173,12 @@
     <Compile Include="ModuleInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Statics.cs" />
+    <Compile Include="Verbs\AdminNewsVerb.cs" />
+    <Compile Include="Verbs\AdminFilesVerb.cs" />
+    <Compile Include="Verbs\AdminRolesVerb.cs" />
+    <Compile Include="Verbs\AdminSiteVerb.cs" />
+    <Compile Include="Verbs\AdminUsersVerb.cs" />
+    <Compile Include="Verbs\ProjectsAdmVerb.cs" />
     <Compile Include="Verbs\ProjectVerb.cs" />
     <Compile Include="ViewModels\ViewBugs.cs" />
     <Compile Include="ViewModels\ViewFileReleases.cs" />
@@ -227,6 +234,7 @@
     <None Include="Views\FileReleases\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\ProjectAdminSite\Index.cshtml" />
     <None Include="Views\ProjectFiles\Create.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -6,17 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using BlackCogs.Interfaces;
 using BlackOwl.Core.Application;
-
-namespace Projects.Verbs
+namespace Projects .Verbs
 {
-    [Export(typeof(IActionVerb)), ExportMetadata("Category", "Navigation")]
-    public class ProjectVerb : IActionVerb
+    [Export(typeof(IActionVerb)), ExportMetadata("Category", "AdminNavigation")]
+    public class AdminRolesVerb : IActionVerb
     {
         public string Action
         {
             get
             {
-                return "Index";
+                return "GetRoles";
             }
         }
 
@@ -24,7 +23,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Projects";
+                return "User";
             }
         }
 
@@ -32,7 +31,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Handles Modules";
+                return "Here you Administrage the Existing User Roles on the Projects ";
             }
         }
 
@@ -40,7 +39,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return false;
+                return true;
             }
         }
 
@@ -48,7 +47,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Projects";
+                return "Roles Administration";
             }
         }
         public string Moduledescription

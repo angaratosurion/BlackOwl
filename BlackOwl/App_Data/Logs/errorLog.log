@@ -618,3 +618,134 @@ Parameter name: name
    at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
    at System.Collections.Generic.List`1.ForEach(Action`1 action)
    at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:04:06.401: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at MultiPlex.Core.Application.MultiPlexRouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\MultiPlex\MultiPlex.Core\Application\App_Start\MultiPlexRouteConfig.cs:line 19
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:04:06.478: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at BlackOwl.Core.Application.RouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl.Core\Application\App_Start\RouteConfig.cs:line 25
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:07:58.262: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at MultiPlex.Core.Application.MultiPlexRouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\MultiPlex\MultiPlex.Core\Application\App_Start\MultiPlexRouteConfig.cs:line 19
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:07:58.311: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at BlackOwl.Core.Application.RouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl.Core\Application\App_Start\RouteConfig.cs:line 25
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:10:04.005: Fatal|Bootstrapper.Compose => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at MultiPlex.Core.Application.MultiPlexRouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\MultiPlex\MultiPlex.Core\Application\App_Start\MultiPlexRouteConfig.cs:line 19
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:10:04.052: Fatal|Application.Application_Start => Bootstrapper.RegisterRoutes => CommonTools.ErrorReporting|System.ArgumentException: A route named 'Default' is already in the route collection. Route names must be unique.
+Parameter name: name
+   at System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints)
+   at System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults)
+   at BlackOwl.Core.Application.RouteConfig.RegisterRoutes(RouteCollection routes) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl.Core\Application\App_Start\RouteConfig.cs:line 25
+   at BlackCogs.Bootstrapper.<>c__DisplayClass13_0.<RegisterRoutes>b__3(IRouteRegistrar r) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at BlackCogs.Bootstrapper.RegisterRoutes() in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 225
+2016/04/21 00:10:07.448: Fatal|BlackCogsUserManager.UserExists => BlackCogsUserManager.GetUser => CommonTools.ErrorReporting|System.InvalidOperationException: The context cannot be used while the model is being created. This exception may be thrown if the context is used inside the OnModelCreating method or if the same context instance is accessed by multiple threads concurrently. Note that instance members of DbContext and related classes are not guaranteed to be thread safe.
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.First[TSource](IQueryable`1 source, Expression`1 predicate)
+   at BlackCogs.Managers.BlackCogsUserManager.GetUser(String id) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Managers\BlackCogsUserManager.cs:line 40
+2016/04/21 00:10:23.007: Fatal|RuntimeMethodHandle.InvokeMethod => Application.Application_Error => CommonTools.ErrorReporting|System.InvalidOperationException: The view 'Index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/ProjectAdminSite/Index.aspx
+~/Views/ProjectAdminSite/Index.ascx
+~/Views/Shared/Index.aspx
+~/Views/Shared/Index.ascx
+~/Views/ProjectAdminSite/Index.cshtml
+~/Views/ProjectAdminSite/Index.vbhtml
+~/Views/Shared/Index.cshtml
+~/Views/Shared/Index.vbhtml
+~/Modules/MultiPlex/Views/ProjectAdminSite/Index.cshtml
+~/Modules/Projects/Views/ProjectAdminSite/Index.cshtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecute>b__15(IAsyncResult asyncResult, Controller controller)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.System.Web.Mvc.Async.IAsyncController.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   at System.Web.Mvc.Async.AsyncResultWrapper.End[TResult](IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.Async.AsyncResultWrapper.End(IAsyncResult asyncResult, Object tag)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2016/04/21 00:12:08.568: Fatal|CustomControllerFactory.CreateController => Bootstrapper.GetInstance => CommonTools.ErrorReporting|System.ComponentModel.Composition.ImportCardinalityMismatchException: No exports were found that match the constraint: 
+	ContractName	Projects User
+	RequiredTypeIdentity	System.Web.Mvc.IController
+   at System.ComponentModel.Composition.Hosting.ExportProvider.GetExports(ImportDefinition definition, AtomicComposition atomicComposition)
+   at System.ComponentModel.Composition.Hosting.ExportProvider.GetExportsCore(Type type, Type metadataViewType, String contractName, ImportCardinality cardinality)
+   at System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValueCore[T](String contractName, ImportCardinality cardinality)
+   at System.ComponentModel.Composition.Hosting.ExportProvider.GetExportedValue[T](String contractName)
+   at BlackCogs.Bootstrapper.GetInstance[T](String contractName) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Bootstrapper.cs:line 109
+2016/04/21 00:12:08.579: Fatal|MvcHandler.ProcessRequestInit => CustomControllerFactory.CreateController => CommonTools.ErrorReporting|System.Exception: Controller not found!
+   at BlackCogs.Controllers.Factory.CustomControllerFactory.CreateController(RequestContext requestContext, String controllerName) in G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackCogs\BlackCogs\Controllers\Factory\CustomControllerFactory.cs:line 39
+2016/04/21 00:12:08.579: Fatal|RuntimeMethodHandle.InvokeMethod => Application.Application_Error => CommonTools.ErrorReporting|System.InvalidOperationException: The IControllerFactory 'BlackCogs.Controllers.Factory.CustomControllerFactory' did not return a controller for the name 'Projects User'.
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContext httpContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.BeginProcessRequest(HttpContext context, AsyncCallback cb, Object extraData)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
