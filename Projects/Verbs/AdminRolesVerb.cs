@@ -23,7 +23,7 @@ namespace Projects .Verbs
         {
             get
             {
-                return "User";
+                return "ProjectsUser";
             }
         }
 

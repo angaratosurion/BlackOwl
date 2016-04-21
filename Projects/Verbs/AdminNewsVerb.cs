@@ -24,7 +24,7 @@ namespace Projects .Verbs
         {
             get
             {
-                return "ProjectsNews";
+                return "ProjectNews";
             }
         }
 
@@ -32,7 +32,7 @@ namespace Projects .Verbs
         {
             get
             {
-                return "Here you Administrage the Existing Categories on the Projects ";
+                return "Here you Administrage the Existing News on the Projects ";
             }
         }
 
@@ -66,7 +66,7 @@ namespace Projects .Verbs
         {
             get
             {
-                return "Categories Administration";
+                return "News Administration";
             }
         }
     }

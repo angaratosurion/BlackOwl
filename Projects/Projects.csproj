@@ -154,6 +154,7 @@
     <Compile Include="Controllers\ProjectFilesController.cs" />
     <Compile Include="Controllers\ProjectNewsController.cs" />
     <Compile Include="Controllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ProjectUsersController.cs" />
     <Compile Include="Managers\BugManager.cs" />
     <Compile Include="Managers\ChangeLogManager.cs" />
     <Compile Include="Managers\ProjectFileManager.cs" />
@@ -183,6 +184,8 @@
     <Compile Include="ViewModels\ViewBugs.cs" />
     <Compile Include="ViewModels\ViewFileReleases.cs" />
     <Compile Include="ViewModels\ViewProject.cs" />
+    <Compile Include="ViewModels\ViewProjectFullUserDetails.cs" />
+    <Compile Include="ViewModels\ViewProjectUsers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -219,6 +222,7 @@
     <None Include="Views\ChangeLogs\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Views\Projects\EditProject.cshtml" />
     <None Include="Views\FileReleases\Create.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -229,6 +233,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Views\FileReleases\Edit.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\FileReleases\GetFileReleasesByProjectId.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Views\FileReleases\Index.cshtml">
@@ -247,6 +254,13 @@
     <None Include="Views\ProjectFiles\Edit.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <Content Include="Views\Projects\GetProjectUsers.cshtml" />
+    <None Include="Views\ProjectFiles\DetailsByProjectId.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Views\ProjectFiles\GetFileByProjectId.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="Views\ProjectFiles\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -259,6 +273,7 @@
     <None Include="Views\ProjectNews\Edit.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\ProjectNews\GetNewsByProjectsId.cshtml" />
     <None Include="Views\ProjectNews\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -271,12 +286,23 @@
     <None Include="Views\Projects\Details.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="Views\Projects\Edit.cshtml">
+    <None Include="Views\Projects\EditBasicInfo.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="Views\Projects\Index.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Views\ProjectsUser\AddUserToRole.cshtml" />
+    <None Include="Views\ProjectsUser\CreateNewRole.cshtml" />
+    <None Include="Views\ProjectsUser\CreateNewUser.cshtml" />
+    <None Include="Views\ProjectsUser\DeleteRole.cshtml" />
+    <None Include="Views\ProjectsUser\DeleteUser.cshtml" />
+    <None Include="Views\ProjectsUser\Details.cshtml" />
+    <None Include="Views\ProjectsUser\FullDetails.cshtml" />
+    <None Include="Views\ProjectsUser\GetRoles.cshtml" />
+    <None Include="Views\ProjectsUser\Index.cshtml" />
+    <None Include="Views\ProjectsUser\RemoveUserFromRole.cshtml" />
+    <None Include="Views\ProjectsUser\RoleDetails.cshtml" />
     <None Include="Views\Shared\Error.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -24,7 +24,7 @@ namespace Projects .Verbs
         {
             get
             {
-                return "Projects File";
+                return "ProjectsFile";
             }
         }
 

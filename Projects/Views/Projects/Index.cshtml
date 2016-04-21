@@ -51,7 +51,7 @@
             }
          @if (Statics.usrmng.UserHasAccessToProject(usr, proj, false) == true)
          {
-            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) @Html.Raw(" | ")
+            @Html.ActionLink("Edit", "EditProject", new { id = item.Id }) @Html.Raw(" | ")
          }
             @Html.ActionLink("Details", "Details", new { id=item.Id })
         @if (Statics.usrmng.UserHasAccessToProject(usr, proj, false) == true)

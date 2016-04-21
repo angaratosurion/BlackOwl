@@ -37,6 +37,21 @@ namespace Projects.Controllers
             
             return View(vrels);
         }
+        public ActionResult GetFileReleasesByProjectId(int? id)
+        {
+            //var fileReleases = db.FileReleases.Include(f => f.ChangeLog);
+            
+            var fileReleases = this.relmngr.GetAllReleasesByProjectId(id);
+            List<ViewFileReleases> vrels = new List<ViewFileReleases>();
+            foreach (var rel in fileReleases)
+            {
+                ViewFileReleases vrel = new ViewFileReleases();
+                vrel.ImportFromModel(rel);
+                vrels.Add(vrel);
+            }
+
+            return View(vrels);
+        }
 
         // GET: FileReleases/Details/5
         public ActionResult Details(int? id)

@@ -26,6 +26,63 @@ namespace Projects.Managers
         BugManager bugmngr = Statics.bugmngr;
         ChangeLogManager chgMngr = Statics.chgMngr;
         ProjectNewsManager newMngr = Statics.newMngr;
+
+        public List<Project> ListProjectByAdmUser(string username)
+        {
+            try
+            {
+                List<Project> ap = null;
+                if (!CommonTools.isEmpty(username) && Statics.usrmng.UserExists(username))
+                {
+                    ApplicationUser adm = Statics.usrmng.GetUser(username);
+                    if (adm != null)
+                    {
+                        ap = this.db.Projects.Where(x => x.Admininstrator == adm.Id).ToList();
+                    }
+
+                }
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+                return null;
+            }
+        }
+        public List<Project> ListWikiByUser(string username)
+        {
+            try
+            {
+                List<Project> ap = null;
+                if (!CommonTools.isEmpty(username) && Statics.usrmng.UserExists(username))
+                {
+                    ApplicationUser usr = Statics.usrmng.GetUser(username);
+                    List<Project> projs = this.List();
+                    if (projs != null)
+                    {
+                        ap = new List<Project>();
+                        foreach (Project p in projs)
+                        {
+                            if (p.Members != null && p.Members.Exists(s => s.Member == usr.Id))
+                            {
+                                ap.Add(p);
+                            }
+                        }
+
+                    }
+                }
+                return ap;
+
+            }
+            catch (Exception ex)
+            {
+
+                CommonTools.ErrorReporting(ex);
+                return null;
+            }
+        }
         public List<Project> List()
         {
             try
@@ -182,6 +239,28 @@ namespace Projects.Managers
                         db.Projects.Remove(proj);
                         db.SaveChanges();
                         FileManager.DeleteDirectory(path);
+                    }
+
+                }
+
+            }
+            catch (Exception ex) { CommonTools.ErrorReporting(ex); }
+        }
+        public void DeletebyAdm(string user,string adm)
+        {
+            try
+            {
+                List<Project> proj;
+                Wiki wk;
+                if (CommonTools.isEmpty(user) == false && CommonTools.isEmpty(adm)==false)
+                {
+                    proj = this.ListProjectByAdmUser(user);
+                    if ( proj !=null)
+                    {
+                        foreach(Project p in proj)
+                        {
+                            this.Delete(p.Id, adm);
+                        }
                     }
 
                 }

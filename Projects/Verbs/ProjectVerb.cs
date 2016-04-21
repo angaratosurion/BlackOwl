@@ -32,7 +32,7 @@ namespace Projects.Verbs
         {
             get
             {
-                return "Handles Modules";
+                return "Handles Projects";
             }
         }
 

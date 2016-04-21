@@ -38,9 +38,19 @@ namespace Projects.Controllers
             }
             return View(projectNews);
         }
+        public ActionResult GetNewsByProjectsId(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            var projectNews = mngr.ListByProjectId(id);
+           
+            return View(projectNews.ToList());
+        }
 
         // GET: ProjectNews/Create
-           [Authorize]
+        [Authorize]
         public ActionResult Create()
         {
             return View();

@@ -73,6 +73,18 @@ namespace Projects.Managers
                 return null;
             }
         }
+        public List<ProjectFiles> DetailsByProjectId(int? id)
+        {
+            try
+            {
+                return db.ProjectFiles.Where(s => s.Project.Id == id).ToList();
+            }
+            catch (Exception ex)
+            {
+                CommonTools.ErrorReporting(ex);
+                return null;
+            }
+        }
         public void Edit(ProjectFiles projectFiles)
         {
             try

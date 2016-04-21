@@ -34,6 +34,14 @@ namespace Projects.Controllers
             }
             return View(this.filmngr.DetailsByReleaseId(releaseid));
         }
+        public ActionResult GetFileByProjectId(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            return View(this.filmngr.DetailsByProjectId(id));
+        }
 
         // GET: ProjectFiles/Details/5
         public ActionResult Details(int? id)

@@ -82,7 +82,7 @@ namespace Projects.Controllers
 
         // GET: Projects/Edit/5
         [Authorize]
-        public ActionResult Edit(int? id)
+        public ActionResult EditBasicInfo(int? id)
         {
             if (id == null)
             {
@@ -97,13 +97,28 @@ namespace Projects.Controllers
             vproject.ImportFromModel(project);
             return View(vproject);
         }
-
+        [Authorize]
+        public ActionResult EditProject(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Project project = this.mngr.GetProjectById(Convert.ToInt32(id));
+            //if (project == null)
+            //{
+            //    return HttpNotFound();
+            //}
+            ViewProject vproject = new ViewProject();
+            vproject.ImportFromModel(project);
+            return View(vproject);
+        }
         // POST: Projects/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Name,Description,RowVersion")] ViewProject vproject)
+        public ActionResult EditBasicInfo([Bind(Include = "Id,Name,Description,RowVersion")] ViewProject vproject)
         {
             if (ModelState.IsValid)
             {
@@ -142,7 +157,26 @@ namespace Projects.Controllers
             
             return RedirectToAction("Index");
         }
+        public ActionResult GetProjectUsers(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Project project = this.mngr.GetProjectById(Convert.ToInt32(id));
+            //if (project == null)
+            //{
+            //    return HttpNotFound();
+            //}
+            ViewProject vproject = new ViewProject();
+            vproject.ImportFromModel(project);
+            ViewProjectUsers vpusr = new ViewProjectUsers();
+            vpusr.Administrator = vproject.Admininstrator;
+            vpusr.Members = vproject.Members;
+            vpusr.Project = vproject;
+            return View(vpusr);
+        }
 
-       
+
     }
 }
