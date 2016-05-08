@@ -32,7 +32,7 @@
 
         <dd>
             @*@Html.DisplayFor(model => model.WikiName)*@
-             @Html.ActionLink(Model.WikiName, "Details", "HomeWiki", new {wikiname= Model.WikiName } ,htmlAttributes:null)
+             @Html.ActionLink(Model.WikiName, "Details", "HomeWiki", new { wikiname = Model.WikiName }, htmlAttributes: null)
 
             
         </dd>
@@ -51,5 +51,8 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "EditProject", new { id = Model.Id }) |
+    @Html.ActionLink("Releses", "Index", "FileReleases", new { projectid = Model.Id }, htmlAttributes: null)|
+    @Html.ActionLink("Bugs", "Index", "Bugs", new { projectid = Model.Id }, htmlAttributes: null)|
+    @Html.ActionLink("News", "GetNewsByProjectsId", "ProjectNews", new { id = Model.Id }, htmlAttributes: null)|
     @Html.ActionLink("Back to List", "Index")
 </p>

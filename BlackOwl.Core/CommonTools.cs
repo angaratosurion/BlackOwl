@@ -29,9 +29,9 @@ namespace BlackOwl.Core
                return true;
            }
        }
-       public static void ErrorReporting (Exception ex)
-       {
-           throw (ex);
-       }
+       //public static void ErrorReporting (Exception ex)
+       //{
+       //    throw (ex);
+       //}
     }
 }

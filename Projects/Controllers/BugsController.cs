@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
@@ -12,6 +13,8 @@ using Projects.ViewModels;
 
 namespace Projects.Controllers
 {
+    [Export("Bugs", typeof(IController))]
+    [PartCreationPolicy(CreationPolicy.NonShared)]
     public class BugsController : Controller
     {
         private ApplicationDbContext db =Statics.db;
@@ -59,7 +62,8 @@ namespace Projects.Controllers
         }
 
         // GET: Bugs/Create
-        public ActionResult Create()
+        [Authorize]
+        public ActionResult Create(int? projectid)
         {
             return View();
         }
@@ -69,9 +73,15 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt")] ViewBugs vbugs)
+        public ActionResult Create([Bind(Include = "Id,Name,Description,ReporedAt,EditedAt")] ViewBugs vbugs, int projectid)
         {
-            if (ModelState.IsValid)
+            vbugs.EditedAt = DateTime.Now;
+            vbugs.EditedBy = Statics.usrmng.GetUser(this.User.Identity.Name);
+            vbugs.ReportedBy = vbugs.EditedBy;
+            vbugs.ReporedAt = vbugs.EditedAt;
+            vbugs.Project = Statics.mngr.GetProjectById(projectid);
+           
+           // if (ModelState.IsValid)
             {
                 Bugs bugs = vbugs.ExportTomodel();
                 this.bugmngr.Create(bugs);

@@ -16,7 +16,7 @@ namespace Projects.Managers
 {
     public class ProjectsManager
     {
-         private ApplicationDbContext db =Statics.db;
+        private ApplicationDbContext db = new ApplicationDbContext();
         ProjectUserManager usrmng = Statics.usrmng;
         MultiPlex.Core.Managers.WikiManager wkmngr = new MultiPlex.Core.Managers.WikiManager();
         PluginManager plugmanger = Statics.plugmanger;
@@ -95,6 +95,7 @@ namespace Projects.Managers
             }
             catch (Exception ex)
             {
+
                 return null;
 
             }

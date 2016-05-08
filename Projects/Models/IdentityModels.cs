@@ -51,15 +51,15 @@ namespace Projects.Models
             //  .HasRequired(c => c.Project)
             // .WithRequiredPrincipal()
             //  .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<Project>()
+            //   .HasOptional(c => c.Releases)
+            //    .WithMany()
+            //    .WillCascadeOnDelete(false);
+            //modelBuilder.Entity<ProjectFiles>()
             modelBuilder.Entity<Project>()
                .HasOptional(c => c.Releases)
-                .WithMany()
-                .WillCascadeOnDelete(false);
-            //modelBuilder.Entity<ProjectFiles>()
-            //modelBuilder.Entity<Project>()
-            //   .HasRequired(c => c.Releases)
-            //   .WithMany()
-            //   .WillCascadeOnDelete(false);
+               .WithMany()
+               .WillCascadeOnDelete(false);
 
             //    .HasRequired(c => c.Release)
             //    .WithRequiredDependent()
@@ -72,12 +72,13 @@ namespace Projects.Models
             //  .HasRequired(c => c.Release)
             //  .WithOptional()
             //  .WillCascadeOnDelete(false);
-           
 
 
 
-           
-            
+
+
+
+
 
 
 

@@ -7,13 +7,7 @@
 <h2>Index</h2>
 
 <p>
-    @{var projectid = this.Request.Params.Get("projectid");
-        if (projectid == null)
-        {
-            projectid = ViewBag.projectid;
-        }
-    }
-    @Html.ActionLink("Create New", "Create",new { projectid=projectid})
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>

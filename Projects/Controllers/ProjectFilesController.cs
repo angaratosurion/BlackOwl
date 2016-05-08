@@ -60,7 +60,7 @@ namespace Projects.Controllers
 
         // GET: ProjectFiles/Create
         [Authorize]
-        public ActionResult Create()
+        public ActionResult Create(int? releaseid)
         {
             return View();
         }
@@ -70,7 +70,7 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,ReleaseId,FileName,Path")] ProjectFiles projectFiles,HttpPostedFileBase file)
+        public ActionResult Create([Bind(Include = "Id,ReleaseId,FileName,Path")] ProjectFiles projectFiles,HttpPostedFileBase file, int? releaseid)
         {
             if (ModelState.IsValid && file!=null)
             {

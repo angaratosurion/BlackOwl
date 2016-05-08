@@ -14,7 +14,7 @@ using Projects.ViewModels;
 namespace Projects.Controllers
 {
 
-    [Export("FileRelease", typeof(IController))]
+    [Export("FileReleases", typeof(IController))]
     [PartCreationPolicy(CreationPolicy.NonShared)]
     public class FileReleasesController : Controller
     {
@@ -72,7 +72,7 @@ namespace Projects.Controllers
 
         // GET: FileReleases/Create
         [Authorize]
-        public ActionResult Create()
+        public ActionResult Create(int projectid)
         {
             ViewBag.Id = new SelectList(db.ChangeLogs, "Id", "Title");
             return View();
@@ -83,9 +83,13 @@ namespace Projects.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Tittle,Version,Published,content")] ViewFileReleases vfileReleases)
+        public ActionResult Create([Bind(Include = "Id,Tittle,Version,Published,content")] ViewFileReleases vfileReleases,int projectid)
         {
-            if (ModelState.IsValid)
+            vfileReleases.Project = Statics.mngr.GetProjectById(projectid);
+            vfileReleases.Published = DateTime.Now;
+            vfileReleases.UploadedBy = Statics.usrmng.GetUser(this.User.Identity.Name);
+            
+            //if (ModelState.IsValid)
             {
                 FileReleases fileReleases = vfileReleases.ExportTomodel();
                 this.relmngr.CreateNew(fileReleases);

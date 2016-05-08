@@ -112,11 +112,14 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Mod
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Delete.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Details.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\GetFileReleasesByProjectId.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Index.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Create.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Delete.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Details.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\DetailsByProjectId.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\GetFileByProjectId.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Index.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Create.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Delete.cshtml
@@ -125,6 +128,7 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Mod
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Create.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Delete.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\EditBasicInfo.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Index.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Error.cshtml
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Lockout.cshtml
@@ -138,7 +142,3 @@ G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Mod
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csprojResolveAssemblyReference.cache
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
 G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\GetFileReleasesByProjectId.cshtml
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\DetailsByProjectId.cshtml
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\EditBasicInfo.cshtml
-G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\GetFileByProjectId.cshtml

@@ -10,7 +10,15 @@ namespace Projects.Managers
 {
     public class ReleasesManager
     {
-         private ApplicationDbContext db =Statics.db;
+        private ApplicationDbContext db = Statics.db;
+        public ReleasesManager()
+        {
+            if (Statics.db==null)
+            {
+                db = new ApplicationDbContext();
+            }
+        }
+
         ProjectFileManager projfilmngr = Statics.projfilmngr;
         public  void CreateNew (FileReleases release)
         {
@@ -23,7 +31,9 @@ namespace Projects.Managers
                 }
 
             }
-              catch (Exception ex){CommonTools.ErrorReporting(ex);  }
+              catch (Exception ex){
+                Statics.db = new ApplicationDbContext();
+                CommonTools.ErrorReporting(ex);  }
         }
       
         public void Edit(FileReleases release)
@@ -97,7 +107,7 @@ namespace Projects.Managers
             try
             {
                 List<FileReleases> ap = null;
-                ap = db.FileReleases.Include(f => f.ChangeLog).ToList();
+                ap = db.FileReleases.ToList();
 
 
                 return ap;
@@ -116,7 +126,8 @@ namespace Projects.Managers
             {
                 List<FileReleases> ap = null;
 
-               var q = db.FileReleases.Include(f => f.ChangeLog).ToList();
+                //  var q = db.FileReleases.Include(f => f.ChangeLog).ToList();
+                var q = this.GetAllReleases();
                 if (q != null)
                 {
                     

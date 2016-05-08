@@ -7,7 +7,14 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @{var id = this.Request.Params.Get("id");
+        if (id == null)
+        {
+            id = ViewBag.id;
+        }
+    }
+    
+     @Html.ActionLink("Create New", "Create" , new { id=id})
 </p>
 <table class="table">
     <tr>
