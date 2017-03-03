@@ -1,2 +1,0 @@
-G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\BlackOwl.Projects.Migrations.initial.resources
-G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\BlackOwl.Projects.csproj.GenerateResource.Cache

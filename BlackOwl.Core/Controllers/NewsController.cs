@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using BlackCogs.Data.Models;
 using BlackOwl.Core.Data;
 using BlackOwl.Core.Data.Models;
 

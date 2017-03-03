@@ -18,8 +18,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F6BE40
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOwl.Core", "BlackOwl.Core\BlackOwl.Core.csproj", "{0A876A7B-02F4-4152-8627-A222E78A73B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projects", "Projects\Projects.csproj", "{3785C42B-B1A9-4C54-992D-23D4E78085AE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackCogs", "..\BlackCogs\BlackCogs\BlackCogs.csproj", "{B17EDE4E-7C83-40D7-BE1B-5B54598F0D30}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiPlex.Core", "..\MultiPlex\MultiPlex.Core\MultiPlex.Core.csproj", "{03DA9457-2F29-4A8A-B5CE-971F68DD8759}"
@@ -45,10 +43,6 @@ Global
 		{0A876A7B-02F4-4152-8627-A222E78A73B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A876A7B-02F4-4152-8627-A222E78A73B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A876A7B-02F4-4152-8627-A222E78A73B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B17EDE4E-7C83-40D7-BE1B-5B54598F0D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B17EDE4E-7C83-40D7-BE1B-5B54598F0D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B17EDE4E-7C83-40D7-BE1B-5B54598F0D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
