@@ -1,0 +1,144 @@
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\Projects.csprojResolveAssemblyReference.cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\Projects.Migrations.initial.resources
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\Projects.csproj.GenerateResource.Cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Projects.dll.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\BlackOwl.Core.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\EntityFramework.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\EntityFramework.SqlServer.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.Cookies.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.OAuth.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Web.Infrastructure.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Newtonsoft.Json.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Owin.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.AttributedModel.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Convention.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Hosting.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Runtime.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.TypedParts.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Net.Http.Formatting.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Helpers.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Http.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Http.WebHost.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Mvc.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Razor.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.Deployment.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.Razor.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\BlackOwl.Core.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\EntityFramework.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\EntityFramework.SqlServer.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Microsoft.Owin.Security.OAuth.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\Newtonsoft.Json.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.AttributedModel.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Convention.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Hosting.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.Runtime.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Composition.TypedParts.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Net.Http.Formatting.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Helpers.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Http.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Http.WebHost.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Mvc.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.Razor.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.Deployment.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\bin\Debug\System.Web.WebPages.Razor.xml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\Projects\obj\Debug\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Error.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Lockout.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\_Layout.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\_LoginPartial.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\Web.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Views\_ViewStart.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.dll.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\BlackOwl\BlackOwl\Modules\Projects\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\NLog.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\connectionstrings.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Bugs\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ChangeLogs\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\GetFileReleasesByProjectId.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\FileReleases\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\DetailsByProjectId.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\GetFileByProjectId.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectFiles\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Edit.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\ProjectNews\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Create.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Delete.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Details.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\EditBasicInfo.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Projects\Index.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Error.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\Lockout.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\_Layout.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Shared\_LoginPartial.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\Web.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Views\_ViewStart.cshtml
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.dll.config
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\BlackOwl\Modules\Projects\Projects.pdb
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.csprojResolveAssemblyReference.cache
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.dll
+G:\AutoSyncWithParis-Server\My Programs\dotNet\Open Source\BlackOwl\Projects\obj\Debug\Projects.pdb

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackOwl", "BlackOwl\BlackOwl.csproj", "{6CE16B16-7F21-47BA-AA15-0E7824A33494}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiPlex.Web", "..\MultiPlex\MultiPlex.Web\MultiPlex.Web.csproj", "{5CEECB04-F597-4AB0-847C-5452393CA1D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WikiPlex", "..\MultiPlex\WikiPlex\WikiPlex.csproj", "{3EA6CBE4-2523-4BB3-8926-9A1746774741}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projects", "Projects\Projects.csproj", "{3785C42B-B1A9-4C54-992D-23D4E78085AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,8 +61,15 @@ Global
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA6CBE4-2523-4BB3-8926-9A1746774741}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3785C42B-B1A9-4C54-992D-23D4E78085AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28A1A628-6F6B-4787-9B41-E1AEB5BCD4A2}
 	EndGlobalSection
 EndGlobal
